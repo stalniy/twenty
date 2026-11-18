@@ -59,37 +59,48 @@ describe('research and chat providers', () => {
     ).toThrow('disallowed tool');
   });
 
-  it('validates tool arguments and preserves valid calls for Twenty to execute', () => {
-    const request: ChatRequest = {
-      ...REQUEST,
-      tools: [
-        {
-          type: 'function',
-          function: {
-            name: 'lookup',
-            parameters: {
-              type: 'object',
-              properties: { id: { type: 'string' } },
-              required: ['id'],
-              additionalProperties: false,
+  it.each([
+    ['implicit dialect', {}],
+    ['Draft 7', { $schema: 'http://json-schema.org/draft-07/schema#' }],
+    [
+      'Draft 2020-12',
+      { $schema: 'https://json-schema.org/draft/2020-12/schema' },
+    ],
+  ])(
+    'validates tool arguments and preserves valid calls with %s',
+    (_dialect, schema) => {
+      const request: ChatRequest = {
+        ...REQUEST,
+        tools: [
+          {
+            type: 'function',
+            function: {
+              name: 'lookup',
+              parameters: {
+                ...schema,
+                type: 'object',
+                properties: { id: { type: 'string' } },
+                required: ['id'],
+                additionalProperties: false,
+              },
             },
           },
-        },
-      ],
-    };
-    expect(() =>
-      validateCompletion(request, {
-        content: '',
-        toolCalls: [{ name: 'lookup', arguments: '{"id":12}' }],
-      }),
-    ).toThrow('invalid tool arguments');
-    expect(
-      validateCompletion(request, {
-        content: '',
-        toolCalls: [{ name: 'lookup', arguments: '{"id":"company"}' }],
-      }).toolCalls[0].name,
-    ).toBe('lookup');
-  });
+        ],
+      };
+      expect(() =>
+        validateCompletion(request, {
+          content: '',
+          toolCalls: [{ name: 'lookup', arguments: '{"id":12}' }],
+        }),
+      ).toThrow('invalid tool arguments');
+      expect(
+        validateCompletion(request, {
+          content: '',
+          toolCalls: [{ name: 'lookup', arguments: '{"id":"company"}' }],
+        }).toolCalls[0].name,
+      ).toBe('lookup');
+    },
+  );
 
   it('rejects malformed structured output', () => {
     expect(() =>

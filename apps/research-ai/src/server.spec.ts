@@ -1,9 +1,10 @@
 import { once } from 'node:events';
 import { type AddressInfo } from 'node:net';
 
-import { afterEach, beforeEach, expect, it } from 'vitest';
+import { afterEach, beforeEach, expect, it, vi } from 'vitest';
 
 import { readConfiguration } from './config.ts';
+import { ProviderError, type ChatProvider } from './contracts.ts';
 import { createBridge } from './server.ts';
 
 const CONFIGURATION = readConfiguration({
@@ -11,15 +12,16 @@ const CONFIGURATION = readConfiguration({
   RESEARCH_AI_MODEL: 'configured-model',
 });
 let receivedMessages: unknown;
-const SERVER = createBridge(CONFIGURATION, {
-  complete: async (request) => {
-    receivedMessages = request.messages;
-    return { content: 'Hello from Codex', toolCalls: [] };
-  },
-});
+const complete = vi.fn<ChatProvider['complete']>();
+const SERVER = createBridge(CONFIGURATION, { complete });
 let baseURL: string;
 
 beforeEach(async () => {
+  complete.mockReset();
+  complete.mockImplementation(async (request) => {
+    receivedMessages = request.messages;
+    return { content: 'Hello from Codex', toolCalls: [] };
+  });
   SERVER.listen(0, '127.0.0.1');
   await once(SERVER, 'listening');
   baseURL = `http://127.0.0.1:${(SERVER.address() as AddressInfo).port}`;
@@ -87,6 +89,65 @@ it('rejects unsupported images instead of silently ignoring them', async () => {
     ],
   });
   expect(response.status).toBe(400);
+});
+
+it('streams answer text while the provider is still running and emits final tool calls once', async () => {
+  let release: () => void = () => {};
+  const providerCanFinish = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  complete.mockImplementationOnce(async (_request, _signal, onText) => {
+    onText?.('Lookup ');
+    await providerCanFinish;
+    return {
+      content: 'Lookup ready',
+      toolCalls: [{ name: 'lookup', arguments: '{}' }],
+    };
+  });
+  const response = await send({
+    model: 'configured-model',
+    messages: [{ role: 'user', content: 'Look it up' }],
+    stream: true,
+  });
+  const reader = response.body!.getReader();
+  const decoder = new TextDecoder();
+  try {
+    const first = await reader.read();
+    expect(decoder.decode(first.value)).toContain('"content":"Lookup "');
+  } finally {
+    release();
+  }
+  let remaining = '';
+  for (;;) {
+    const chunk = await reader.read();
+    if (chunk.done) break;
+    remaining += decoder.decode(chunk.value, { stream: true });
+  }
+  expect(remaining).toContain('"content":"ready"');
+  expect(remaining).toContain('"name":"lookup"');
+  expect(remaining).toContain('"finish_reason":"tool_calls"');
+  expect(remaining).not.toContain('Lookup');
+});
+
+it('returns an SSE error if a provider fails after streaming text', async () => {
+  complete.mockImplementationOnce(async (_request, _signal, onText) => {
+    onText?.('Partial reply');
+    throw new ProviderError(
+      502,
+      'invalid_tool_arguments',
+      'Invalid tool arguments.',
+    );
+  });
+  const response = await send({
+    model: 'configured-model',
+    messages: [{ role: 'user', content: 'Look it up' }],
+    stream: true,
+  });
+  const stream = await response.text();
+  expect(stream).toContain('Partial reply');
+  expect(stream).toContain('"code":"invalid_tool_arguments"');
+  expect(stream).not.toContain('"finish_reason":"stop"');
+  expect(stream).toContain('data: [DONE]');
 });
 
 it('bounds incoming request bodies', async () => {

@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { Ajv } from 'ajv';
 import { Ajv2020 } from 'ajv/dist/2020.js';
 
 import { type Configuration } from './config.ts';
@@ -14,10 +15,23 @@ import {
   type ResearchAIProvider,
 } from './contracts.ts';
 
-const JSON_SCHEMA_VALIDATOR = new Ajv2020({
+const JSON_SCHEMA_OPTIONS = {
   strict: false,
   validateFormats: false,
-});
+} as const;
+
+const DRAFT_07_VALIDATOR = new Ajv(JSON_SCHEMA_OPTIONS);
+const DRAFT_2020_VALIDATOR = new Ajv2020(JSON_SCHEMA_OPTIONS);
+const DRAFT_07_SCHEMA = 'http://json-schema.org/draft-07/schema';
+
+const compileSchema = (schema: Record<string, unknown>) => {
+  const dialect = schema.$schema;
+  const validator =
+    dialect === DRAFT_07_SCHEMA || dialect === DRAFT_07_SCHEMA + '#'
+      ? DRAFT_07_VALIDATOR
+      : DRAFT_2020_VALIDATOR;
+  return validator.compile(schema);
+};
 
 const openAIResponseSchema = z.object({
   choices: z
@@ -113,7 +127,7 @@ export const validateCompletion = (
         'invalid_tool_call',
         'Provider returned a disallowed tool call.',
       );
-    const valid = JSON_SCHEMA_VALIDATOR.compile(tool.function.parameters)(
+    const valid = compileSchema(tool.function.parameters)(
       JSON.parse(call.arguments),
     );
     if (!valid)
@@ -149,10 +163,7 @@ export const validateCompletion = (
     request.response_format?.type === 'json_schema'
   ) {
     const schema = request.response_format.json_schema?.schema;
-    if (
-      !schema ||
-      !JSON_SCHEMA_VALIDATOR.compile(schema)(JSON.parse(completion.content))
-    ) {
+    if (!schema || !compileSchema(schema)(JSON.parse(completion.content))) {
       throw new ProviderError(
         502,
         'invalid_output',
@@ -176,7 +187,7 @@ export const createChatProvider = (
       ? createCodexProvider(configuration)
       : createOpenAIProvider(configuration);
   return {
-    async complete(request, signal) {
+    async complete(request, signal, onText) {
       if (request.model !== configuration.RESEARCH_AI_MODEL)
         throw new ProviderError(
           400,
@@ -195,7 +206,7 @@ export const createChatProvider = (
       try {
         return validateCompletion(
           request,
-          await provider.complete(request, signal),
+          await provider.complete(request, signal, onText),
         );
       } catch (error) {
         if (

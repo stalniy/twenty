@@ -108,6 +108,25 @@ export const createBridge = (
       if (!response.writableEnded) controller.abort();
     };
     response.on('close', cancel);
+    const metadata = {
+      id: `chatcmpl-${randomUUID()}`,
+      created: Math.floor(Date.now() / 1000),
+      model: configuration.RESEARCH_AI_MODEL,
+    };
+    const sendDelta = (delta: object, finishReason: string | null = null) => {
+      if (response.destroyed) return;
+      if (!response.headersSent) {
+        response.writeHead(200, {
+          'Content-Type': 'text/event-stream',
+          'Cache-Control': 'no-store, no-transform',
+          'X-Accel-Buffering': 'no',
+        });
+        delta = { role: 'assistant', ...delta };
+      }
+      response.write(
+        `data: ${JSON.stringify({ ...metadata, object: 'chat.completion.chunk', choices: [{ index: 0, delta, finish_reason: finishReason }] })}\n\n`,
+      );
+    };
     try {
       let chatRequest: ChatRequest;
       try {
@@ -125,34 +144,40 @@ export const createBridge = (
           );
         throw error;
       }
+      let streamedText = '';
       const completion = await provider.complete(
         chatRequest,
         controller.signal,
+        chatRequest.stream &&
+          (!chatRequest.response_format ||
+            chatRequest.response_format.type === 'text')
+          ? (text) => {
+              streamedText += text;
+              sendDelta({ content: text });
+            }
+          : undefined,
       );
       const message = completionMessage(completion);
       const finishReason =
         completion.toolCalls.length > 0 ? 'tool_calls' : 'stop';
-      const metadata = {
-        id: `chatcmpl-${randomUUID()}`,
-        created: Math.floor(Date.now() / 1000),
-        model: configuration.RESEARCH_AI_MODEL,
-      };
       if (chatRequest.stream) {
-        response.writeHead(200, {
-          'Content-Type': 'text/event-stream',
-          'Cache-Control': 'no-store',
-          Connection: 'keep-alive',
-        });
+        if (!completion.content.startsWith(streamedText))
+          throw new ProviderError(
+            502,
+            'invalid_output',
+            'The completed answer did not match the streamed text.',
+          );
         const toolCalls = message.tool_calls?.map((call, index) => ({
           ...call,
           index,
         }));
-        response.write(
-          `data: ${JSON.stringify({ ...metadata, object: 'chat.completion.chunk', choices: [{ index: 0, delta: { role: 'assistant', content: completion.content, ...(toolCalls && { tool_calls: toolCalls }) }, finish_reason: null }] })}\n\n`,
-        );
-        response.write(
-          `data: ${JSON.stringify({ ...metadata, object: 'chat.completion.chunk', choices: [{ index: 0, delta: {}, finish_reason: finishReason }] })}\n\n`,
-        );
+        const remainingText = completion.content.slice(streamedText.length);
+        if (remainingText || toolCalls || !response.headersSent)
+          sendDelta({
+            content: remainingText,
+            ...(toolCalls && { tool_calls: toolCalls }),
+          });
+        sendDelta({}, finishReason);
         response.end('data: [DONE]\n\n');
       } else {
         sendJSON(response, 200, {
@@ -170,10 +195,18 @@ export const createBridge = (
               'invalid_response',
               'AI request failed or returned invalid data. Check worker configuration and input.',
             );
-      if (!response.destroyed)
-        sendJSON(response, failure.status, {
+      if (!response.destroyed) {
+        const errorBody = {
           error: { code: failure.code, message: failure.message },
-        });
+        };
+        if (response.headersSent) {
+          response.end(
+            `data: ${JSON.stringify(errorBody)}\n\ndata: [DONE]\n\n`,
+          );
+        } else {
+          sendJSON(response, failure.status, errorBody);
+        }
+      }
     } finally {
       response.off('close', cancel);
       busy = false;

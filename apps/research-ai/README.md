@@ -80,7 +80,7 @@ Codex does not expose a hard output-token cap through this CLI interface: its li
 
 Chat history and tool results are forwarded on every turn to a new ephemeral Codex job. Native Codex shell execution and web search are disabled, user config is ignored, and the job runs read-only in a temporary directory. Child environment contains only host/runtime paths needed by the CLI, excluding API keys, bridge secrets and database credentials. Required machine policies still apply.
 
-Only text messages and function tools are supported. Images and attachments fail explicitly. SSE is emitted after each Codex job completes, so the chat works but does not display token-by-token generation. Tool arguments and requested JSON output are schema-validated before returning to Twenty. Model/schema failures stop the turn. This adapter does not expose embeddings, transcription, native web search, parallel execution, or a Responses API endpoint.
+Only text messages and function tools are supported. Images and attachments fail explicitly. With file-based Codex login, the bridge uses Codex App Server to stream chat answer text as it is generated. It starts an ephemeral thread with a temporary Codex home linked to the existing login file so host configuration is excluded. Tool calls and requested JSON output are returned only after schema validation. Keychain-only host login and the optional OpenAI API fallback use buffered replies. Model/schema failures stop the turn. This adapter does not expose embeddings, transcription, native web search, parallel execution, or a Responses API endpoint.
 
 ## Installed skills
 

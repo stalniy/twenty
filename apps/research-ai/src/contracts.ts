@@ -95,7 +95,11 @@ export const completionSchema = z.strictObject({
 });
 export type Completion = z.infer<typeof completionSchema>;
 export type ChatProvider = {
-  complete: (request: ChatRequest, signal?: AbortSignal) => Promise<Completion>;
+  complete: (
+    request: ChatRequest,
+    signal?: AbortSignal,
+    onText?: (text: string) => void,
+  ) => Promise<Completion>;
 };
 
 export class ProviderError extends Error {
