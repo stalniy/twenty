@@ -1,0 +1,9 @@
+**/node_modules
+**/.env
+**/.env.*
+**/.local
+**/.git
+**/.app
+**/.twenty
+**/dist
+**/coverage

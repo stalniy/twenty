@@ -1,0 +1,658 @@
+{
+  "lastVerified": "2026-11-13",
+  "verificationMethod": "Public primary pages and search-indexed primary content. Search-indexed evidence is explicitly labeled; no direct company confirmation or private code inspection.",
+  "companies": [
+    {
+      "sourceId": "casl:frequency",
+      "name": "Frequency",
+      "aliases": [],
+      "product": "Frequency",
+      "priority": "High",
+      "website": "https://frequency.media/",
+      "domain": "frequency.media",
+      "domainSources": [
+        "https://frequency.media/about/",
+        "https://www.flintsparklabs.com/matrix"
+      ],
+      "evidenceUrl": "https://www.flintsparklabs.com/matrix",
+      "evidenceType": "Engineer CV / portfolio",
+      "evidenceDate": null,
+      "caslUsage": "Engineer describes centralized CASL permissions combined with RLS and tenant isolation in the v2 platform.",
+      "technicalStack": "Supabase; Next.js; Vercel; Mantine; PostgreSQL RLS",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium-high: explicit first-person implementation report; association corroborated by company site.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "Employment History → VP of Engineering / Principal Engineer, Frequency, 2024–Present.",
+      "evidenceExcerpt": "CASL + RLS permissions",
+      "contacts": [
+        {
+          "firstName": "Flint",
+          "lastName": "Barrow",
+          "profileUrl": "https://www.flintsparklabs.com/matrix",
+          "association": "Frequency, 2024–Present; CV says promoted to VP of Engineering.",
+          "associationSource": "https://www.flintsparklabs.com/matrix",
+          "jobTitle": "VP of Engineering"
+        }
+      ],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "sourceId": "casl:autogenai",
+      "name": "AutogenAI",
+      "aliases": [],
+      "product": "AutogenAI",
+      "priority": "High",
+      "website": "https://autogenai.com/",
+      "domain": "autogenai.com",
+      "domainSources": [
+        "https://autogenai.com/uk/about/about-us/"
+      ],
+      "evidenceUrl": "https://www.lappage.net/cv",
+      "evidenceType": "Engineer CV",
+      "evidenceDate": null,
+      "caslUsage": "Engineer reports replacing about 70 backend checks and 40+ frontend gates with centralized CASL RBAC.",
+      "technicalStack": "TypeScript; React; Node.js; NestJS; PostgreSQL; Prisma",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium-high: specific implementation report by named engineer.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "Experience → Software Engineer, AutogenAI; Nov 2025–Present.",
+      "evidenceExcerpt": "permissions refactor to an RBAC library (CASL)",
+      "contacts": [
+        {
+          "firstName": "Lee",
+          "lastName": "Lappage",
+          "profileUrl": "https://www.lappage.net/cv",
+          "association": "Software Engineer at AutogenAI, Nov 2025–Present.",
+          "associationSource": "https://www.lappage.net/cv",
+          "jobTitle": "Software Engineer"
+        }
+      ],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "sourceId": "casl:merit-incentives",
+      "name": "Merit Incentives",
+      "aliases": [],
+      "product": "Merit Engage",
+      "priority": "High",
+      "website": "https://www.meritincentives.com/",
+      "domain": "meritincentives.com",
+      "domainSources": [
+        "https://www.meritincentives.com/",
+        "https://meritengage.com/"
+      ],
+      "evidenceUrl": "https://hassanahmad.info/projects/merit-engage",
+      "evidenceType": "Engineer project case study",
+      "evidenceDate": null,
+      "caslUsage": "Engineer reports integrating a portal with shared identity, tenant provisioning and CASL authorization.",
+      "technicalStack": "NestJS; Sequelize; PostgreSQL; Redis; Next.js; GCP Cloud Run; Pub/Sub",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium-high: detailed first-person implementation report; product footer identifies Merit Incentives.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "Key Highlights; product link points to products.meritengage.com.",
+      "evidenceExcerpt": "tenant provisioning, and CASL-based authorization",
+      "contacts": [
+        {
+          "firstName": "Hassan",
+          "lastName": "Ahmad",
+          "profileUrl": "https://hassanahmad.info/projects/merit-engage",
+          "association": "Engineer reports work on Merit Engage; product site identifies Merit Incentives. Not independently verified as current employee.",
+          "associationSource": "https://hassanahmad.info/projects/merit-engage"
+        }
+      ],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "sourceId": "casl:omniful",
+      "name": "Omniful",
+      "aliases": [],
+      "product": "Omniful",
+      "priority": "High",
+      "website": "https://www.omniful.ai/",
+      "domain": "omniful.ai",
+      "domainSources": [
+        "https://www.omniful.ai/"
+      ],
+      "evidenceUrl": "https://himalayas.app/@paruljamwal",
+      "evidenceType": "Engineer professional profile",
+      "evidenceDate": null,
+      "caslUsage": "Engineer reports CASL RBAC in frontend logistics workflows spanning WMS, OMS and TMS.",
+      "technicalStack": "React; TypeScript; React Query; CASL; Pusher; Beam",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium: search-indexed first-person profile; direct fetch unavailable.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Search-indexed primary profile retrieved; direct fetch failed (cache miss).",
+      "evidenceContext": "What I am looking for → work at Omniful Technologies and CASL RBAC.",
+      "evidenceExcerpt": "implement RBAC with CASL",
+      "contacts": [
+        {
+          "firstName": "Parul",
+          "lastName": "Jamwal",
+          "profileUrl": "https://himalayas.app/@paruljamwal",
+          "association": "Profile identifies frontend engineering at Omniful Technologies.",
+          "associationSource": "https://himalayas.app/@paruljamwal",
+          "jobTitle": "Software Development Engineer (Frontend)"
+        }
+      ],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "sourceId": "casl:money-forward-i",
+      "name": "Money Forward i",
+      "aliases": [
+        "Money Forward i, Inc.",
+        "マネーフォワードi株式会社"
+      ],
+      "product": "Admina",
+      "priority": "High",
+      "website": "https://admina.moneyforward.com/",
+      "domain": "admina.moneyforward.com",
+      "domainSources": [
+        "https://admina.moneyforward.com/us/about",
+        "https://admina.moneyforward.com/us/terms"
+      ],
+      "evidenceUrl": "https://mfi.engineering/conditional-authorization-with-nestjs-and-casl-6293266aa896",
+      "evidenceType": "Company engineering article",
+      "evidenceDate": "2023-11-28",
+      "caslUsage": "Company engineering publication describes extending existing CASL authorization with conditional permissions in Admina. Historical report; current adoption unverified.",
+      "technicalStack": "NestJS; CASL; TypeScript",
+      "adoptionStatus": "Historical",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for historical use; current status unknown.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "How we build Admina → Conditional authorization with Nestjs and CASL; author Arivanandan.",
+      "evidenceExcerpt": "We use CASL",
+      "contacts": [],
+      "missingInformation": [
+        "Current CASL adoption requires verification; evidence dates to 2023."
+      ]
+    },
+    {
+      "sourceId": "casl:incred-money",
+      "name": "InCred Money",
+      "aliases": [],
+      "product": "Partner Platform",
+      "priority": "Medium-High",
+      "website": "https://www.incredmoney.com/",
+      "domain": "incredmoney.com",
+      "domainSources": [
+        "https://www.incredmoney.com/"
+      ],
+      "evidenceUrl": "https://docs.partner.incredmoney.com/docs/auth-package",
+      "evidenceType": "Company developer documentation",
+      "evidenceDate": null,
+      "caslUsage": "Shared @incredmoney/auth package documents CASL policy enforcement through PoliciesGuard and an injected ability factory. Production deployment not established.",
+      "technicalStack": "NestJS; MongoDB; JWT; CASL",
+      "adoptionStatus": "Documentation-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for documented package design; production status unverified.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Search-indexed primary documentation retrieved; direct fetch failed (cache miss).",
+      "evidenceContext": "Overview → Architecture → Guard Overview → PoliciesGuard.",
+      "evidenceExcerpt": "CASL-based policy enforcement",
+      "contacts": [],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ],
+      "additionalSources": [
+        "https://docs.partner.incredmoney.com/docs/auth-package/guards"
+      ]
+    },
+    {
+      "sourceId": "casl:peoplex",
+      "name": "PeopleX",
+      "aliases": [],
+      "product": "PeopleX AI Interview",
+      "priority": "Medium-High",
+      "website": "https://peoplex.jp/",
+      "domain": "peoplex.jp",
+      "domainSources": [
+        "https://peoplex.jp/"
+      ],
+      "evidenceUrl": "https://zenn.dev/peoplex_blog/articles/2511-authz-with-typescript-casl",
+      "evidenceType": "Company engineering publication",
+      "evidenceDate": "2025-12-04",
+      "caslUsage": "PeopleX AI Interview architecture shares TypeScript authorization across frontend, API and database using CASL React and Prisma integrations.",
+      "technicalStack": "TypeScript; React; Prisma; @casl/react; @casl/prisma",
+      "adoptionStatus": "Documentation-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for published architecture; current deployment not independently checked.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "Introduction identifies PeopleX AI Interview; sections on CASL selection and implementation.",
+      "evidenceExcerpt": "@casl/prisma",
+      "contacts": [],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "sourceId": "casl:naya-people",
+      "name": "Naya People",
+      "aliases": [],
+      "product": "HCM/ITSM SaaS",
+      "priority": "Medium-High",
+      "website": "https://nayapeople.com/",
+      "domain": "nayapeople.com",
+      "domainSources": [
+        "https://nayapeople.com/"
+      ],
+      "evidenceUrl": "https://nayapeople.com/en/solutions/group-multiple-companies",
+      "evidenceType": "Official product technical page",
+      "evidenceDate": null,
+      "caslUsage": "Official feature list states CASL action-level permissions enforced in both web frontend and API across company tenants.",
+      "technicalStack": "CASL; multi-tenant database; Docker; Kubernetes",
+      "adoptionStatus": "Documentation-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for current documented capabilities; production implementation not independently audited.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "Features this group actually uses; deployment details in FAQ.",
+      "evidenceExcerpt": "Action-level RBAC with CASL",
+      "contacts": [],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "sourceId": "casl:xpand",
+      "name": "Xpand",
+      "aliases": [
+        "1MRobotics",
+        "1MRobotics, Inc."
+      ],
+      "product": "Autonomous Retail Dashboard",
+      "priority": "Medium",
+      "website": "https://xpand.us/",
+      "domain": "xpand.us",
+      "domainSources": [
+        "https://xpand.us/",
+        "https://rudin.tech/"
+      ],
+      "evidenceUrl": "https://rudin.tech/",
+      "evidenceType": "Engineer case study",
+      "evidenceDate": null,
+      "caslUsage": "Engineer reports building tenant-aware dashboard RBAC with Auth0 and CASL; outcome states worldwide production use.",
+      "technicalStack": "Auth0; CASL; real-time camera feeds",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium-high: explicit implementation and production claim; product and domain cross-linked.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "Case Studies → Xpand AI-Powered Multi-Tenant Dashboard → What I did (CASL); Outcome (production).",
+      "evidenceExcerpt": "role-based access control using Auth0 and CASL",
+      "contacts": [],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ],
+      "legalEntity": "1MRobotics, Inc. (Xpand), per company-site footer."
+    },
+    {
+      "sourceId": "casl:quick-up",
+      "name": "Quick Up",
+      "aliases": [],
+      "product": "Courier Platform / Admin Dashboard",
+      "priority": "Medium",
+      "website": "https://quickup.uk/",
+      "domain": "quickup.uk",
+      "domainSources": [
+        "https://quickup.uk/faqs",
+        "https://pk.linkedin.com/in/muhammad-umair-012549265"
+      ],
+      "evidenceUrl": "https://pk.linkedin.com/in/muhammad-umair-012549265",
+      "evidenceType": "Engineer professional profile",
+      "evidenceDate": null,
+      "caslUsage": "Engineer reports dynamic CASL RBAC spanning more than 15 administration modules in Quick-Up dashboard work.",
+      "technicalStack": "Vue; TypeScript; Vuex; Axios; CASL",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium: indexed primary profile with project and company association; direct LinkedIn fetch blocked.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Search-indexed primary profile retrieved; direct LinkedIn fetch returned 999.",
+      "evidenceContext": "Projects → Quick-Up Admin Dashboard; Jun–Jul 2026.",
+      "evidenceExcerpt": "Implemented RBAC with CASL",
+      "contacts": [
+        {
+          "firstName": "Muhammad",
+          "lastName": "Umair",
+          "profileUrl": "https://pk.linkedin.com/in/muhammad-umair-012549265",
+          "association": "Profile lists QUICK UP experience and Quick-Up Admin Dashboard project, Jun–Jul 2026.",
+          "associationSource": "https://pk.linkedin.com/in/muhammad-umair-012549265"
+        }
+      ],
+      "missingInformation": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "sourceId": "casl:ezclass",
+      "name": "EZclass",
+      "aliases": [
+        "EZclass OÜ"
+      ],
+      "product": "Education Platform",
+      "priority": "Medium",
+      "website": "https://ezclass.io/",
+      "domain": "ezclass.io",
+      "domainSources": [
+        "https://ezclass.io/"
+      ],
+      "evidenceUrl": "https://id.linkedin.com/in/reven-ferlian-erlangga",
+      "evidenceType": "Former engineer professional profile",
+      "evidenceDate": null,
+      "caslUsage": "Former developer reports NestJS REST APIs enforcing user permissions with CASL at EZclass. Evidence covers Jan–Apr 2025; current use unknown.",
+      "technicalStack": "NestJS; TypeScript; Next.js; CASL",
+      "adoptionStatus": "Historical",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium: indexed named engineer profile with explicit dated role; current adoption unknown.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Search-indexed primary profile retrieved; direct LinkedIn fetch returned 999.",
+      "evidenceContext": "Experience → Full Stack Developer → EZclass, Jan–Apr 2025.",
+      "evidenceExcerpt": "with CASL to define and enforce user permissions",
+      "contacts": [
+        {
+          "firstName": "Reven Ferlian",
+          "lastName": "Erlangga",
+          "profileUrl": "https://id.linkedin.com/in/reven-ferlian-erlangga",
+          "association": "Former Full Stack Developer at EZclass, Jan–Apr 2025. Do not imply current employment.",
+          "associationSource": "https://id.linkedin.com/in/reven-ferlian-erlangga"
+        }
+      ],
+      "missingInformation": [
+        "Current adoption unknown; source describes former employment Jan–Apr 2025."
+      ],
+      "legalEntity": "EZclass OÜ; registry code 16802842, per official footer."
+    },
+    {
+      "sourceId": "casl:rango",
+      "name": "RanGO",
+      "aliases": [],
+      "product": "Restaurant Ordering SaaS",
+      "priority": "Medium",
+      "website": "https://www.rango.food/",
+      "domain": "rango.food",
+      "domainSources": [
+        "https://www.rangodelivery.com/",
+        "https://www.rango.food/",
+        "https://pt.linkedin.com/posts/luizfbandeira_h%C3%A1-dois-anos-comecei-a-construir-o-rango-activity-7504193448040857600-NeTe"
+      ],
+      "evidenceUrl": "https://br.linkedin.com/in/luizfbandeira",
+      "evidenceType": "Founder professional profile and first-person project post",
+      "evidenceDate": null,
+      "caslUsage": "Founder post reports production restaurant SaaS with AWS Cognito authentication and CASL RBAC.",
+      "technicalStack": "NestJS; Fastify; Next.js; Prisma; PostgreSQL; Redis; AWS Cognito; CASL; BullMQ",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium-high: first-person production report and domain link; direct profile blocked.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Search-indexed primary profile and project post retrieved; direct LinkedIn profile fetch returned 999.",
+      "evidenceContext": "Founder post about building RanGO; profile lists RanGO project and rangodelivery.com.",
+      "evidenceExcerpt": "RBAC com CASL",
+      "contacts": [
+        {
+          "firstName": "Luiz Filipe",
+          "lastName": "Bandeira",
+          "profileUrl": "https://br.linkedin.com/in/luizfbandeira",
+          "association": "Self-reports building RanGO and serving paying restaurants; association corroborated by his public project post.",
+          "associationSource": "https://br.linkedin.com/in/luizfbandeira"
+        }
+      ],
+      "missingInformation": [
+        "Exact evidence publication date unavailable (relative timestamps only).",
+        "Current CASL use not independently confirmed with company."
+      ],
+      "additionalSources": [
+        "https://pt.linkedin.com/posts/luizfbandeira_h%C3%A1-dois-anos-comecei-a-construir-o-rango-activity-7504193448040857600-NeTe"
+      ],
+      "domainAliases": [
+        "rangodelivery.com"
+      ]
+    },
+    {
+      "sourceId": "casl:medworkforce-ai",
+      "name": "MedWorkForce.ai",
+      "aliases": [],
+      "product": "Clinic ERP",
+      "priority": "Medium",
+      "website": null,
+      "domain": null,
+      "domainSources": [],
+      "evidenceUrl": "https://ahmedshamswali.com/projects/medworkforce-ai-clinic-erp-healthcare-workforce-platform",
+      "evidenceType": "Engineer project case study",
+      "evidenceDate": null,
+      "caslUsage": "Developer describes database-driven CASL permissions and frontend gates for a clinic ERP developed for Buzfi Limited. Legal owner not established.",
+      "technicalStack": "NestJS 11; Next.js 16; React 19; Prisma 7; PostgreSQL; CASL",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium for technical report; low for legal owner identity.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Search-indexed primary case study retrieved; direct fetch failed (cache miss).",
+      "evidenceContext": "Role And Contributions names Buzfi Limited; architecture describes API and staff dashboard.",
+      "evidenceExcerpt": "Full-stack development for Buzfi Limited on MedWorkForce.ai",
+      "contacts": [],
+      "missingInformation": [
+        "Legal owner/operator of MedWorkForce.ai unverified.",
+        "Canonical company domain unverified.",
+        "Production adoption unverified."
+      ],
+      "skipReason": "Legal company/owner unverified: developer worked for Buzfi Limited but product ownership is not established. Do not create a product-only Company or assume Buzfi is owner.",
+      "associatedOrganization": "Buzfi Limited (development relationship reported; ownership not confirmed)."
+    },
+    {
+      "sourceId": "casl:dobby-ads",
+      "name": "Dobby Ads",
+      "aliases": [],
+      "product": "Internal Agency Management Platform",
+      "priority": "Low-Medium",
+      "website": "https://dobbyads.com/",
+      "domain": "dobbyads.com",
+      "domainSources": [
+        "https://dobbyads.com/privacy-policy"
+      ],
+      "evidenceUrl": "https://github.com/debanjan-exe",
+      "evidenceType": "Engineer GitHub professional profile",
+      "evidenceDate": null,
+      "caslUsage": "Developer reports CASL access control for a live tenant-aware agency platform at Dobby Ads.",
+      "technicalStack": "NestJS; MongoDB; MySQL; CASL; Docker; GCP",
+      "adoptionStatus": "Engineer-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "Medium-high: named developer, dated association and explicit technical report; company domain verified separately.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "README → experience → Dobby Ads; Nov 2022–Present.",
+      "evidenceExcerpt": "Implemented RBAC via CASL",
+      "contacts": [],
+      "missingInformation": [
+        "Internal private platform cannot be inspected.",
+        "No commercial interest verified."
+      ],
+      "legalEntity": "Dobby Ads Inc, per official privacy policy.",
+      "verifiedAdditionalContact": {
+        "name": "Debanjan Acharyya",
+        "profileUrl": "https://github.com/debanjan-exe",
+        "association": "Profile names Dobby Ads as employer, Nov 2022–Present; developer relationship verified.",
+        "create": false
+      }
+    },
+    {
+      "sourceId": "casl:maventi-group",
+      "name": "Maventi Group",
+      "aliases": [],
+      "product": "Aulintri",
+      "priority": "Watchlist",
+      "website": "https://www.maventigroup.com/",
+      "domain": "maventigroup.com",
+      "domainSources": [
+        "https://www.maventigroup.com/index.html",
+        "https://aulintri.com/terms/"
+      ],
+      "evidenceUrl": "https://in.linkedin.com/jobs/view/senior-full-stack-engineer-at-maventi-group-4435491123",
+      "evidenceType": "Employer job listing",
+      "evidenceDate": null,
+      "caslUsage": "Listing proposes PostgreSQL-derived CASL abilities with RLS tenant isolation. It explicitly seeks bringing the platform to production; production CASL adoption is not confirmed.",
+      "technicalStack": "Next.js; TypeScript; NestJS; PostgreSQL RLS; Redis; Temporal; AWS; CASL",
+      "adoptionStatus": "Planned",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for stated implementation plan; no production-use confirmation.",
+      "lastVerified": "2026-11-12",
+      "evidenceAvailability": "Primary page retrieved",
+      "evidenceContext": "What you will own → DB-driven RBAC + ABAC control plane; earlier text says build sprint starting.",
+      "evidenceExcerpt": "CASL abilities compiled from PostgreSQL",
+      "contacts": [],
+      "missingInformation": [
+        "Exact listing date unknown; page provides relative timestamp.",
+        "Production usage not confirmed."
+      ]
+    },
+    {
+      "sourceId": "casl:strapi",
+      "name": "Strapi",
+      "aliases": [],
+      "product": "Strapi headless CMS",
+      "priority": "Not assigned",
+      "website": "https://strapi.io/",
+      "domain": "strapi.io",
+      "domainSources": [
+        "https://strapi.io/"
+      ],
+      "evidenceUrl": "https://github.com/strapi/strapi/blob/develop/docs/docs/docs/01-core/admin/02-permissions/01-how-they-work.mdx",
+      "evidenceType": "Official repository source and documentation",
+      "evidenceDate": null,
+      "caslUsage": "Official documentation identifies CASL as the admin RBAC engine. The permissions package declares @casl/ability, and admin permission code generates abilities from user roles and permissions.",
+      "technicalStack": "TypeScript; Node.js; @strapi/permissions; @casl/ability",
+      "adoptionStatus": "Documentation-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for documented/source-level CASL adoption; deployed instances not inspected.",
+      "lastVerified": "2026-11-13",
+      "evidenceAvailability": "Primary source retrieved",
+      "evidenceContext": "How Permissions Work → Overview; packages/core/permissions/package.json → dependencies; admin/server/src/services/permission/engine.ts → generateUserAbility.",
+      "evidenceExcerpt": "RBAC permission system relies under the hood on the CASL library",
+      "contacts": [],
+      "missingInformation": [
+        "Exact source publication date unknown; mutable repository branch observed on verification date.",
+        "Commercial priority not assigned.",
+        "Production deployment not independently inspected."
+      ],
+      "additionalSources": [
+        "https://github.com/strapi/strapi/blob/develop/packages/core/permissions/package.json",
+        "https://github.com/strapi/strapi/blob/develop/packages/core/admin/server/src/services/permission/engine.ts"
+      ],
+      "legalEntity": "Repository package author and maintainer: Strapi Solutions SAS."
+    },
+    {
+      "sourceId": "casl:meshery",
+      "name": "Meshery",
+      "aliases": [],
+      "product": "Meshery infrastructure management",
+      "priority": "Not assigned",
+      "website": "https://meshery.io/",
+      "domain": "meshery.io",
+      "domainSources": [
+        "https://meshery.io/"
+      ],
+      "evidenceUrl": "https://docs.meshery.io/reference/extensibility/authorization/",
+      "evidenceType": "Official project authorization documentation",
+      "evidenceDate": null,
+      "caslUsage": "Official authorization docs describe translating provider-issued session permission keys into frontend CASL rules, enforcing page access and individual control visibility.",
+      "technicalStack": "CASL; JavaScript; Redux; RTK Query; @meshery/schemas; Sistent",
+      "adoptionStatus": "Documentation-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for documented/source-level CASL adoption; deployed instances not inspected.",
+      "lastVerified": "2026-11-13",
+      "evidenceAvailability": "Primary source retrieved",
+      "evidenceContext": "Authorization Framework → Introduction to CASL.js, Gating spellings, Access gating and control gating; Key Storage.",
+      "evidenceExcerpt": "Meshery utilizes CASL",
+      "contacts": [],
+      "missingInformation": [
+        "Documentation publication date unknown.",
+        "Commercial organization/legal owner not inferred from project branding.",
+        "Production deployment not independently inspected.",
+        "Commercial priority not assigned."
+      ],
+      "additionalSources": [],
+      "organizationType": "Open-source project/community; not asserted to be an incorporated company."
+    },
+    {
+      "sourceId": "casl:infisical",
+      "name": "Infisical",
+      "aliases": [],
+      "product": "Infisical security and secrets management platform",
+      "priority": "Not assigned",
+      "website": "https://infisical.com/",
+      "domain": "infisical.com",
+      "domainSources": [
+        "https://infisical.com/"
+      ],
+      "evidenceUrl": "https://github.com/Infisical/infisical/blob/main/backend/src/ee/services/permission/permission-service.ts",
+      "evidenceType": "Official repository source and documentation",
+      "evidenceDate": null,
+      "caslUsage": "Backend permission service imports CASL and constructs organization, project and resource abilities with createMongoAbility; role rules and delegated OAuth scopes determine permissions.",
+      "technicalStack": "TypeScript; Fastify; @casl/ability",
+      "adoptionStatus": "Documentation-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for documented/source-level CASL adoption; deployed instances not inspected.",
+      "lastVerified": "2026-11-13",
+      "evidenceAvailability": "Primary source retrieved",
+      "evidenceContext": "backend/src/ee/services/permission/permission-service.ts → CASL imports, getOrgPermission, getProjectPermission and getResourcePermission.",
+      "evidenceExcerpt": "createMongoAbility",
+      "contacts": [],
+      "missingInformation": [
+        "Exact source publication date unknown; mutable repository branch observed on verification date.",
+        "Commercial priority not assigned.",
+        "Production deployment not independently inspected."
+      ],
+      "additionalSources": [
+        "https://github.com/Infisical/infisical/blob/main/backend/CODE_QUALITY.md"
+      ]
+    },
+    {
+      "sourceId": "casl:lightdash",
+      "name": "Lightdash",
+      "aliases": [],
+      "product": "Lightdash analytics platform",
+      "priority": "Not assigned",
+      "website": "https://www.lightdash.com/",
+      "domain": "lightdash.com",
+      "domainSources": [
+        "https://www.lightdash.com/"
+      ],
+      "evidenceUrl": "https://github.com/lightdash/lightdash/blob/main/.context/PERMISSIONS.md",
+      "evidenceType": "Official repository source and documentation",
+      "evidenceDate": null,
+      "caslUsage": "Official permissions documentation describes compiling system/custom role scopes into CASL abilities, then enforcing permissions in backend services and frontend UI. Shared authorization types import CASL Ability.",
+      "technicalStack": "TypeScript; @casl/ability; shared authorization types",
+      "adoptionStatus": "Documentation-reported",
+      "potentialConsultingOpportunity": "Not assessed. No expressed commercial interest or active engagement verified.",
+      "researchConfidence": "High for documented/source-level CASL adoption; deployed instances not inspected.",
+      "lastVerified": "2026-11-13",
+      "evidenceAvailability": "Primary source retrieved",
+      "evidenceContext": "Permissions System → Architecture Overview and CASL Abilities; packages/common/src/authorization/types.ts.",
+      "evidenceExcerpt": "CASL is the underlying authorization library.",
+      "contacts": [],
+      "missingInformation": [
+        "Exact source publication date unknown; mutable repository branch observed on verification date.",
+        "Commercial priority not assigned.",
+        "Production deployment not independently inspected."
+      ],
+      "additionalSources": [
+        "https://raw.githubusercontent.com/lightdash/lightdash/main/packages/common/src/authorization/types.ts"
+      ]
+    }
+  ]
+}

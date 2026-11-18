@@ -1,0 +1,7 @@
+services:
+  server:
+    env_file:
+      - ../../apps/research-ai/.env.twenty
+  worker:
+    env_file:
+      - ../../apps/research-ai/.env.twenty

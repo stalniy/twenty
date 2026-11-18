@@ -71,3 +71,6 @@ screenshots/
 /.diag*.mjs
 /.compare*.mjs
 /.narrow*.mjs
+.env
+.env.twenty
+*.pdf

@@ -1,0 +1,8 @@
+node_modules/
+.yarn/
+**/.app/
+**/.twenty/
+**/dist/
+**/coverage/
+**/.env
+**/.env.*

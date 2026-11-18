@@ -1,0 +1,14 @@
+{
+  "leadTypeFieldType": "SELECT",
+  "option": "CASL_USER",
+  "idempotent": true,
+  "preexistingRecordsPreserved": {
+    "companies": true,
+    "notes": true,
+    "noteTargets": true,
+    "people": true,
+    "opportunities": true,
+    "tasks": true
+  },
+  "companiesVerified": 7
+}

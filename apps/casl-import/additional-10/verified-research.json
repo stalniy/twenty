@@ -1,0 +1,866 @@
+{
+  "researchDate": "2026-11-15",
+  "candidates": [
+    {
+      "name": "Fluents.ai",
+      "aliases": [
+        "Fluents"
+      ],
+      "domain": "fluents.ai",
+      "website": "https://www.fluents.ai/",
+      "priority": "HIGH",
+      "importable": true,
+      "industry": "AI Voice Agents / B2B SaaS",
+      "country": "United States",
+      "product": "AI voice-agent platform; engineer names Dialer Pro, Front Desk, Sales Assistant",
+      "identity": "Commercial organization verified by official site and US postal address in terms.",
+      "sources": [
+        "https://mathz.dev/",
+        "https://www.fluents.ai/",
+        "https://www.fluents.ai/terms"
+      ],
+      "sourceType": "Engineer-reported commercial implementation",
+      "excerpt": "hardened multi-tenant isolation via CASL RBAC and dual-database split",
+      "attribution": "Matheus Lúcio, Fluents.ai experience (2024–2026), mathz.dev",
+      "evidenceDate": "Employment period 2024–2026; page build 2026-08-19",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "Engineer reports multi-tenant control plane and dual-database isolation",
+        "frontend": "React",
+        "backend": "NestJS, GraphQL",
+        "database": "PostgreSQL, TypeORM",
+        "authorizationModel": "CASL RBAC",
+        "multiTenancy": "Customer organization isolation",
+        "notableTechnicalDetails": "Engineer reports per-organization column redaction and industry compliance controls."
+      },
+      "businessContext": {
+        "description": "Official site markets inbound and outbound AI voice operations.",
+        "commercialModel": "Commercial platform; official site offers trial and pricing.",
+        "adoptionSignals": "Engineer reports customer organizations handling tens of thousands of calls daily across healthcare, finance and insurance; product deployment claim, not independently audited or organization-wide revenue.",
+        "companyScale": "Unknown"
+      },
+      "contacts": [
+        {
+          "name": "Matheus Lúcio",
+          "role": "Senior Software Engineer (2024–2026, self-reported)",
+          "association": "Worked on Fluents.ai control plane",
+          "url": "https://mathz.dev/"
+        }
+      ],
+      "limitations": [
+        "Engineer evidence establishes reported implementation during 2024–2026; no production access or owner confirmation of current deployed CASL.",
+        "Engineer workload metrics are self-reported; current product names may differ from 2024–2026 names."
+      ],
+      "sourceId": "fluents-ai",
+      "domainAliases": [],
+      "suppliedResearch": "### Fluents.ai\n\n**Priority:** HIGH  \n**Industry:** AI Voice Agents / B2B SaaS  \n**Country:** United States (verify)\n\n**Evidence:**\nhttps://mathz.dev/\n\n**Technical contact:** Matheus Lúcio\n\n**CASL usage:**\n\n- Engineer-reported use of CASL RBAC.\n- Multi-tenant authorization for customer organization isolation.\n- Used in the control plane for products such as Dialer Pro, Front Desk, and Sales Assistant.\n- Reported technology stack: NestJS, TypeORM, PostgreSQL, GraphQL.\n- Engineer describes work on the platform during 2024–2026.\n- His CV reports that customers execute tens of thousands of calls daily.\n\n**Potential consulting opportunities:**\n\n- Tenant isolation security review.\n- Authorization boundaries for AI agents.\n- Consistent policies across API services.\n- Advanced RBAC/ABAC and policy validation.\n\n**Evidence classification:** Engineer-reported commercial implementation.\n\nVerify the product identity, engineering role, and current usage.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Tenant isolation security review.\n- Authorization boundaries for AI agents.\n- Consistent policies across API services.\n- Advanced RBAC/ABAC and policy validation."
+      },
+      "assessment": {
+        "priority": "HIGH",
+        "evidenceStrength": "Engineer-reported commercial implementation",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Confirm current deployment and permission pain points with public technical contact or owner.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://mathz.dev/",
+          "https://www.fluents.ai/",
+          "https://www.fluents.ai/terms"
+        ],
+        "sourceType": "Engineer-reported commercial implementation",
+        "evidenceDate": "Employment period 2024–2026; page build 2026-08-19",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Strong explicit public CASL evidence; current production status Unknown",
+        "exactExcerpt": "hardened multi-tenant isolation via CASL RBAC and dual-database split",
+        "attribution": "Matheus Lúcio, Fluents.ai experience (2024–2026), mathz.dev",
+        "limitations": [
+          "Engineer evidence establishes reported implementation during 2024–2026; no production access or owner confirmation of current deployed CASL.",
+          "Engineer workload metrics are self-reported; current product names may differ from 2024–2026 names."
+        ]
+      },
+      "notePath": "notes/fluents-ai.md"
+    },
+    {
+      "name": "Tija360",
+      "aliases": [
+        "Tija eProcurement",
+        "tija eProcurement"
+      ],
+      "domain": "tija360.com",
+      "website": "https://tija360.com/",
+      "priority": "MEDIUM",
+      "importable": true,
+      "industry": "Procurement SaaS",
+      "country": "Kenya",
+      "product": "Tija eProcurement",
+      "identity": "Official /about identifies Tija360 as a Nairobi B2B software company building Tija eProcurement. William Muli's portfolio says product built at Radi Digital; development relationship does not establish legal parent ownership.",
+      "sources": [
+        "https://tija360.com/about",
+        "https://tija360.com/pricing",
+        "https://ke.linkedin.com/in/muliswilliam",
+        "https://williammuli.dev/"
+      ],
+      "sourceType": "Engineer-reported SaaS implementation; LinkedIn indexed profile text",
+      "excerpt": "a NestJS API, Prisma and PostgreSQL, Redis and Bull queues, CASL-based authorization",
+      "attribution": "William Muli, LinkedIn Projects / tija eProcurement (search-indexed first-party profile)",
+      "evidenceDate": "Project Jul 2026–Present per indexed LinkedIn",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "TypeScript monorepo, multi-tenant procure-to-pay platform (indexed engineer profile)",
+        "frontend": "Next.js, React (indexed engineer profile)",
+        "backend": "NestJS",
+        "database": "Prisma, PostgreSQL",
+        "authorizationModel": "CASL authorization, RBAC reported in supplied research",
+        "multiTenancy": "Engineer describes multi-tenant product",
+        "notableTechnicalDetails": "Official site verifies configurable multi-level approvals, budget controls, role-scoped visibility; does not name CASL."
+      },
+      "businessContext": {
+        "description": "Procure-to-pay SaaS with requests, approvals, orders, deliveries, invoice matching and payments.",
+        "commercialModel": "Official pricing: US$35/user/month; free supplier users; cloud subscription and self-hosted option.",
+        "adoptionSignals": "Commercial offering verified. Active customer count and adoption scale Unknown.",
+        "companyScale": "Unknown"
+      },
+      "contacts": [
+        {
+          "name": "William Muli",
+          "role": "Senior software engineer; CTO at Radi Digital (own portfolio)",
+          "association": "Public profile says designed/built tija eProcurement; portfolio attributes development to Radi Digital",
+          "url": "https://williammuli.dev/"
+        }
+      ],
+      "limitations": [
+        "Direct LinkedIn fetch returns HTTP 999; CASL/project text independently located in search-indexed copy of same public profile, not full live page.",
+        "Tija360/Radi Digital legal ownership relationship Unknown; do not merge organizations based only on development association.",
+        "Current deployed CASL and active customer count not independently confirmed."
+      ],
+      "sourceId": "tija360",
+      "domainAliases": [],
+      "suppliedResearch": "### Tija360\n\n**Priority:** MEDIUM  \n**Industry:** Procurement SaaS  \n**Country:** Kenya\n\n**Website:**\nhttps://tija360.com/\n\n**Evidence:**\nhttps://ke.linkedin.com/in/muliswilliam\n\n**Technical contact:** William Muli\n\n**CASL usage:**\n\n- Developer reports CASL-based authorization in the Tija eProcurement application.\n- NestJS, Prisma, PostgreSQL.\n- Multi-level approval workflows.\n- Multi-user B2B procurement platform.\n- Public product pricing was reported at approximately $35/user/month; verify before recording as current.\n\n**Potential consulting opportunities:**\n\n- Approval workflow authorization.\n- Multi-organization permissions.\n- Database-level filtering.\n- Permission audits.\n\n**Evidence classification:** Engineer-reported SaaS implementation.\n\nCommercial scale and active customer count are unverified.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Approval workflow authorization.\n- Multi-organization permissions.\n- Database-level filtering.\n- Permission audits."
+      },
+      "assessment": {
+        "priority": "MEDIUM",
+        "evidenceStrength": "Engineer-reported SaaS implementation; LinkedIn indexed profile text",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Confirm current deployment and permission pain points with public technical contact or owner.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://tija360.com/about",
+          "https://tija360.com/pricing",
+          "https://ke.linkedin.com/in/muliswilliam",
+          "https://williammuli.dev/"
+        ],
+        "sourceType": "Engineer-reported SaaS implementation; LinkedIn indexed profile text",
+        "evidenceDate": "Project Jul 2026–Present per indexed LinkedIn",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Medium: explicit CASL in indexed first-party profile; direct retrieval limited",
+        "exactExcerpt": "a NestJS API, Prisma and PostgreSQL, Redis and Bull queues, CASL-based authorization",
+        "attribution": "William Muli, LinkedIn Projects / tija eProcurement (search-indexed first-party profile)",
+        "limitations": [
+          "Direct LinkedIn fetch returns HTTP 999; CASL/project text independently located in search-indexed copy of same public profile, not full live page.",
+          "Tija360/Radi Digital legal ownership relationship Unknown; do not merge organizations based only on development association.",
+          "Current deployed CASL and active customer count not independently confirmed."
+        ]
+      },
+      "notePath": "notes/tija360.md"
+    },
+    {
+      "name": "Sagacify",
+      "aliases": [],
+      "domain": "sagacify.com",
+      "website": "https://sagacify.com/",
+      "priority": "MEDIUM-HIGH",
+      "importable": true,
+      "industry": "AI Engineering / Software Consultancy",
+      "country": "Belgium",
+      "product": "Multiple unnamed client projects",
+      "identity": "Official site identifies Belgian consultancy, part of Craftzing, and lists Killian Gemoets in its team.",
+      "sources": [
+        "https://www.killiangemoets.com/about",
+        "https://sagacify.com/about-us/"
+      ],
+      "sourceType": "Engineer-reported client-project adoption, employer association corroborated by official team page",
+      "excerpt": "End-to-end RBAC and attribute-based (ABAC) permission systems, several built with CASL, enforced identically on frontend and API.",
+      "attribution": "Killian Gemoets, Full Stack Engineer @ Sagacify experience",
+      "evidenceDate": "September 2024–now",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "Multiple client projects; shared frontend/API authorization",
+        "frontend": "React listed for role; per-project mapping Unknown",
+        "backend": "Node.js, Express.js, Fastify listed for role; per-project mapping Unknown",
+        "database": "PostgreSQL, Prisma, Objection.js listed for role; CASL-project mapping Unknown",
+        "authorizationModel": "RBAC and ABAC",
+        "multiTenancy": "Engineer reports secure multi-tenant architectures",
+        "notableTechnicalDetails": "Do not infer all projects or clients use CASL."
+      },
+      "businessContext": {
+        "description": "Custom software and AI engineering consultancy, possible implementation/distribution partner.",
+        "commercialModel": "Client services; official site describes custom AI solutions.",
+        "adoptionSignals": "Official organization-wide claims: 150+ AI projects, 130+ clients, 30+ professionals; these are not CASL deployment metrics.",
+        "companyScale": "Official site reports over 30 professionals"
+      },
+      "contacts": [
+        {
+          "name": "Killian Gemoets",
+          "role": "Full Stack Engineer (portfolio); Full-Stack Developer (official team page)",
+          "association": "Employment corroborated by Sagacify's own team page",
+          "url": "https://www.killiangemoets.com/about"
+        }
+      ],
+      "limitations": [
+        "Client identities and exact CASL deployment counts Unknown.",
+        "Production/current usage is engineer-reported; no code or production access."
+      ],
+      "sourceId": "sagacify",
+      "domainAliases": [],
+      "suppliedResearch": "### Sagacify\n\n**Priority:** MEDIUM-HIGH  \n**Industry:** AI Engineering / Software Consultancy  \n**Country:** Belgium\n\n**Evidence:**\nhttps://www.killiangemoets.com/about\n\n**Technical contact:** Killian Gemoets\n\n**CASL usage:**\n\n- Engineer reports implementing RBAC and ABAC using CASL across multiple client projects.\n- Shared frontend/backend authorization enforcement.\n- Company develops custom software and AI applications.\n\n**Potential consulting opportunities:**\n\n- Integration partnership.\n- Authorization expertise for client engagements.\n- CASL architecture reviews.\n- Cross-project policy standardization.\n- Enterprise support for client deployments.\n\n**Important:** Sagacify is a software consultancy rather than necessarily a SaaS vendor. It may be a valuable implementation or distribution partner.\n\n**Evidence classification:** Engineer-reported client-project adoption.\n\nVerify the person's relationship with Sagacify.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Integration partnership.\n- Authorization expertise for client engagements.\n- CASL architecture reviews.\n- Cross-project policy standardization.\n- Enterprise support for client deployments.\n\n**Important:** Sagacify is a software consultancy rather than necessarily a SaaS vendor. It may be a valuable implementation or distribution partner."
+      },
+      "assessment": {
+        "priority": "MEDIUM-HIGH",
+        "evidenceStrength": "Engineer-reported client-project adoption, employer association corroborated by official team page",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Confirm current deployment and permission pain points with public technical contact or owner.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://www.killiangemoets.com/about",
+          "https://sagacify.com/about-us/"
+        ],
+        "sourceType": "Engineer-reported client-project adoption, employer association corroborated by official team page",
+        "evidenceDate": "September 2024–now",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Strong explicit public CASL evidence; current production status Unknown",
+        "exactExcerpt": "End-to-end RBAC and attribute-based (ABAC) permission systems, several built with CASL, enforced identically on frontend and API.",
+        "attribution": "Killian Gemoets, Full Stack Engineer @ Sagacify experience",
+        "limitations": [
+          "Client identities and exact CASL deployment counts Unknown.",
+          "Production/current usage is engineer-reported; no code or production access."
+        ]
+      },
+      "notePath": "notes/sagacify.md"
+    },
+    {
+      "name": "Korial",
+      "aliases": [
+        "Energy Robotics",
+        "Energy Robotics GmbH",
+        "EnergyRobotics GmbH"
+      ],
+      "domainAliases": [
+        "energy-robotics.com"
+      ],
+      "domain": "korial.com",
+      "website": "https://www.korial.com/",
+      "priority": "HIGH",
+      "importable": true,
+      "industry": "Industrial AI / Robotics SaaS",
+      "country": "Germany",
+      "product": "Enterprise AI / autonomous industrial operations platform",
+      "identity": "Official site explicitly verifies Energy Robotics rebranding to Korial. Imprint says Korial is a brand of Energy Robotics GmbH, Darmstadt, Germany (HRB 98890).",
+      "sources": [
+        "https://mathiasmonstrey.be/en/",
+        "https://www.korial.com/",
+        "https://www.korial.com/legal/imprint"
+      ],
+      "sourceType": "Engineer-reported enterprise implementation; official identity/rebrand corroboration",
+      "excerpt": "RBAC/CASL permission resolution at the GraphQL API gateway",
+      "attribution": "Mathias Monstrey, Monstrey Technologies → Energy Robotics engagement",
+      "evidenceDate": "December 2022–Present",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "Distributed robotics cloud, central GraphQL gateway, devices/frontends/AI services",
+        "frontend": "Customer frontends; framework Unknown",
+        "backend": "NestJS, TypeScript, GraphQL; gRPC, RabbitMQ and Python across platform",
+        "database": "MongoDB, Redis; PostgreSQL listed generally in profile but not verified for this engagement",
+        "authorizationModel": "CASL RBAC at gateway",
+        "multiTenancy": "Not explicitly established in retrieved engagement evidence",
+        "notableTechnicalDetails": "Engineer reports service authentication moving from one-time passwords to token exchange."
+      },
+      "businessContext": {
+        "description": "Industrial AI platform coordinating robots, drones, sensors and data.",
+        "commercialModel": "Enterprise product; demo/sales offering.",
+        "adoptionSignals": "Official platform claims 1m+ inspections and 100+ global deployments. Homepage shows Shell as enterprise partner; customer status is not established by logo alone. Merck relationship not independently verified.",
+        "companyScale": "Unknown; engineer says backend team of four, which is team-specific"
+      },
+      "contacts": [
+        {
+          "name": "Mathias Monstrey",
+          "role": "Senior Backend Developer & Distributed Systems Engineer (self-reported)",
+          "association": "Freelance through Monstrey Technologies to Energy Robotics from 2022-12",
+          "url": "https://mathiasmonstrey.be/en/"
+        }
+      ],
+      "limitations": [
+        "Legal entity remains Energy Robotics GmbH despite brand name change.",
+        "Current usage self-reported in ongoing engagement, not production-audited.",
+        "Shell partner signal verified; Merck customer claim remains supplied/unverified."
+      ],
+      "sourceId": "korial",
+      "suppliedResearch": "### Korial (formerly Energy Robotics)\n\n**Priority:** HIGH  \n**Industry:** Industrial AI / Robotics SaaS  \n**Country:** Germany\n\n**Website:**\nhttps://www.korial.com/\n\n**Evidence:**\nhttps://mathiasmonstrey.be/en/\n\n**Technical contact:** Mathias Monstrey\n\n**Related organization:** Monstrey Technologies\n\n**CASL usage:**\n\n- Engineer reports CASL RBAC in a central GraphQL API Gateway.\n- Gateway supports robotics, AI services, and customer-facing applications.\n- Previously known as Energy Robotics; verify rebranding and the correct current company identity.\n- Company reports over one million robotic inspections and more than 100 deployments.\n- Shell and Merck have been referenced as customers; verify before adding to the note.\n\n**Potential consulting opportunities:**\n\n- Authorization across distributed services.\n- Policy consistency.\n- GraphQL authorization and security review.\n- Fine-grained permissions for robotics and AI workflows.\n- Policy conformance testing.\n\n**Evidence classification:** Engineer-reported enterprise implementation.\n\nThis is one of the highest-priority leads.\n\nUse Korial as the Company name if the rebranding is verified. Preserve Energy Robotics as a historical alias in the research note.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Authorization across distributed services.\n- Policy consistency.\n- GraphQL authorization and security review.\n- Fine-grained permissions for robotics and AI workflows.\n- Policy conformance testing."
+      },
+      "assessment": {
+        "priority": "HIGH",
+        "evidenceStrength": "Engineer-reported enterprise implementation; official identity/rebrand corroboration",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Confirm current deployment and permission pain points with public technical contact or owner.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://mathiasmonstrey.be/en/",
+          "https://www.korial.com/",
+          "https://www.korial.com/legal/imprint"
+        ],
+        "sourceType": "Engineer-reported enterprise implementation; official identity/rebrand corroboration",
+        "evidenceDate": "December 2022–Present",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Strong explicit public CASL evidence; current production status Unknown",
+        "exactExcerpt": "RBAC/CASL permission resolution at the GraphQL API gateway",
+        "attribution": "Mathias Monstrey, Monstrey Technologies → Energy Robotics engagement",
+        "limitations": [
+          "Legal entity remains Energy Robotics GmbH despite brand name change.",
+          "Current usage self-reported in ongoing engagement, not production-audited.",
+          "Shell partner signal verified; Merck customer claim remains supplied/unverified."
+        ]
+      },
+      "notePath": "notes/korial.md"
+    },
+    {
+      "name": "Voltrack Pro",
+      "aliases": [
+        "VolTrack Pro",
+        "Voltrack"
+      ],
+      "domain": "voltrack.pro",
+      "website": "https://voltrack.pro/",
+      "priority": "HIGH",
+      "importable": true,
+      "industry": "Logistics / Fleet Management SaaS",
+      "country": "Egypt",
+      "product": "Voltrack auto-dispatch and real-time fleet control platform",
+      "identity": "Engineer identifies Voltrack Pro as employer; public organization page identifies VolTrack Pro logistics software operation (type Self-Employed). Product site matches logistics model and brand. Legal incorporation/name not established.",
+      "sources": [
+        "https://wuzzuf.net/me/Magdy-Elshrief-8d8a43c5ef",
+        "https://www.linkedin.com/company/voltrack-pro",
+        "https://voltrack.pro/",
+        "https://voltrack.pro/pricing"
+      ],
+      "sourceType": "Engineer-reported commercial SaaS implementation",
+      "excerpt": "Designed and maintained a casl-based multi-tenant rbac system supporting scoped role bindings (master, client, vendor, branch, zone)",
+      "attribution": "Magdy Mohammed Elshrief, Wuzzuf Voltrack Pro work experience",
+      "evidenceDate": "October 2025–Present",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "Multi-tenant logistics and delivery platform",
+        "frontend": "Unknown",
+        "backend": "NestJS",
+        "database": "PostgreSQL, Drizzle ORM, MongoDB, Redis",
+        "authorizationModel": "CASL multi-tenant RBAC; scopes master/client/vendor/branch/zone",
+        "multiTenancy": "Explicit engineer report",
+        "notableTechnicalDetails": "Engineer reports dispatch, shift scheduling, subscription billing and audit logging."
+      },
+      "businessContext": {
+        "description": "Commercial logistics platform automating dispatch and fleet tracking.",
+        "commercialModel": "Official per-driver subscription pricing, minimum five drivers; regional USD/EGP billing.",
+        "adoptionSignals": "Product site claims 2m+ deliveries; marketing claim not audited. Avoid unrelated similarly named brands.",
+        "companyScale": "LinkedIn organization page advertises 11–50 employees, not independently audited"
+      },
+      "contacts": [
+        {
+          "name": "Magdy Mohammed Elshrief",
+          "role": "Software Engineer (Wuzzuf current page)",
+          "association": "Voltrack Pro, October 2025–Present; Egypt per experience",
+          "url": "https://wuzzuf.net/me/Magdy-Elshrief-8d8a43c5ef"
+        }
+      ],
+      "limitations": [
+        "Operating brand verified; legal registered owner and incorporation status Unknown.",
+        "No reciprocal link from retrieved organization profile to product domain; matching brand/product context supports association but legal ownership is not proven.",
+        "Current deployed implementation remains self-reported."
+      ],
+      "sourceId": "voltrack-pro",
+      "domainAliases": [],
+      "suppliedResearch": "### Voltrack Pro\n\n**Priority:** HIGH  \n**Industry:** Logistics / Fleet Management SaaS  \n**Country:** Egypt\n\n**Website:**\nhttps://voltrack.pro/\n\n**Evidence:**\nhttps://wuzzuf.net/me/Magdy-Elshrief-8d8a43c5ef\n\n**Technical contact:** Magdy Elshrief\n\n**CASL usage:**\n\n- CASL-based multi-tenant RBAC.\n- Hierarchical permissions involving master, client, vendor, branch, and zone.\n- Reported stack: NestJS, Drizzle, PostgreSQL, MongoDB, Redis.\n- Used in logistics, dispatch, and fleet management workflows.\n- Commercial subscription model with driver-based pricing.\n\n**Potential consulting opportunities:**\n\n- Hierarchical RBAC/ABAC.\n- Database authorization.\n- Tenant isolation.\n- Fine-grained record access.\n- CASL/Drizzle integration.\n\n**Evidence classification:** Engineer-reported commercial SaaS implementation.\n\nVerify whether Voltrack Pro is a standalone company or product brand and identify the correct CRM entity.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Hierarchical RBAC/ABAC.\n- Database authorization.\n- Tenant isolation.\n- Fine-grained record access.\n- CASL/Drizzle integration."
+      },
+      "assessment": {
+        "priority": "HIGH",
+        "evidenceStrength": "Engineer-reported commercial SaaS implementation",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Confirm current deployment and permission pain points with public technical contact or owner.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://wuzzuf.net/me/Magdy-Elshrief-8d8a43c5ef",
+          "https://www.linkedin.com/company/voltrack-pro",
+          "https://voltrack.pro/",
+          "https://voltrack.pro/pricing"
+        ],
+        "sourceType": "Engineer-reported commercial SaaS implementation",
+        "evidenceDate": "October 2025–Present",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Strong explicit public CASL evidence; current production status Unknown",
+        "exactExcerpt": "Designed and maintained a casl-based multi-tenant rbac system supporting scoped role bindings (master, client, vendor, branch, zone)",
+        "attribution": "Magdy Mohammed Elshrief, Wuzzuf Voltrack Pro work experience",
+        "limitations": [
+          "Operating brand verified; legal registered owner and incorporation status Unknown.",
+          "No reciprocal link from retrieved organization profile to product domain; matching brand/product context supports association but legal ownership is not proven.",
+          "Current deployed implementation remains self-reported."
+        ]
+      },
+      "notePath": "notes/voltrack-pro.md"
+    },
+    {
+      "name": "Jack's Burger",
+      "aliases": [
+        "Jack’s Burger"
+      ],
+      "domain": "jacksburgeruk.com",
+      "website": "https://www.jacksburgeruk.com/",
+      "priority": "MEDIUM",
+      "importable": true,
+      "industry": "Restaurants / Food Service",
+      "country": "United Kingdom",
+      "product": "Jack's Burger multi-branch restaurant back office, POS API and storefront",
+      "identity": "Developer case study directly links to restaurant's canonical site, which identifies North Wales operation; do not treat developer as business owner.",
+      "sources": [
+        "https://aqibrime.cloud/works/jacks-burger",
+        "https://www.jacksburgeruk.com/"
+      ],
+      "sourceType": "Developer-reported commercial implementation",
+      "excerpt": "Every request builds a CASL ability from database roles",
+      "attribution": "Aqib Rime, Jack's Burger Platform case study",
+      "evidenceDate": "Project labelled 2025",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "Bun/Turborepo monorepo; shared API for back office, POS and customer apps",
+        "frontend": "TanStack Start admin, Next.js 16 storefront; Flutter POS/customer apps",
+        "backend": "Typed ORPC API; TanStack server functions",
+        "database": "Postgres, PostGIS, Drizzle",
+        "authorizationModel": "33 resources; branch, warehouse, ownership, amount and open-shift conditions",
+        "multiTenancy": "Multi-branch scoping; organization-level multi-tenancy Unknown",
+        "notableTechnicalDetails": "Per-record checks and list filters share CASL ability; roles stored in database."
+      },
+      "businessContext": {
+        "description": "Multi-location burger restaurant business, not established as SaaS vendor.",
+        "commercialModel": "Restaurant food sales, takeaway and delivery.",
+        "adoptionSignals": "Developer reports operational admin/POS/customer API usage; live customer storefront corroborated.",
+        "companyScale": "Multiple branches per developer; exact count Unknown"
+      },
+      "contacts": [
+        {
+          "name": "Aqib Rime",
+          "role": "Lead engineer (case study)",
+          "association": "Implemented restaurant platform; no ownership claim",
+          "url": "https://aqibrime.cloud/works/jacks-burger"
+        }
+      ],
+      "limitations": [
+        "Legal registered restaurant entity Unknown; verified operating restaurant brand retained.",
+        "Developer describes implementation; current live server authorization not independently inspected."
+      ],
+      "sourceId": "jack-s-burger",
+      "domainAliases": [],
+      "suppliedResearch": "### Jack's Burger\n\n**Priority:** MEDIUM  \n**Industry:** Restaurants / Food Service  \n**Country:** United Kingdom (verify)\n\n**Evidence:**\nhttps://aqibrime.cloud/works/jacks-burger\n\n**Technical contact:** Aqib Rime\n\n**CASL usage:**\n\n- Developer describes authorization involving 33 resources.\n- Permissions based on branch, warehouse, record ownership, and transaction amount.\n- Commercial multi-location restaurant operational system.\n- CASL supports operational and administrative permission workflows.\n\n**Potential consulting opportunities:**\n\n- Complex conditional permissions.\n- Multi-location authorization.\n- Authorization testing.\n- Reducing policy duplication.\n\n**Evidence classification:** Developer-reported commercial implementation.\n\n**Important:** This is not necessarily a SaaS company.\n\nVerify the actual customer/organization identity. Do not assume the developer or agency is the product owner.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Complex conditional permissions.\n- Multi-location authorization.\n- Authorization testing.\n- Reducing policy duplication."
+      },
+      "assessment": {
+        "priority": "MEDIUM",
+        "evidenceStrength": "Developer-reported commercial implementation",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Confirm current deployment and permission pain points with public technical contact or owner.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://aqibrime.cloud/works/jacks-burger",
+          "https://www.jacksburgeruk.com/"
+        ],
+        "sourceType": "Developer-reported commercial implementation",
+        "evidenceDate": "Project labelled 2025",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Strong explicit public CASL evidence; current production status Unknown",
+        "exactExcerpt": "Every request builds a CASL ability from database roles",
+        "attribution": "Aqib Rime, Jack's Burger Platform case study",
+        "limitations": [
+          "Legal registered restaurant entity Unknown; verified operating restaurant brand retained.",
+          "Developer describes implementation; current live server authorization not independently inspected."
+        ]
+      },
+      "notePath": "notes/jack-s-burger.md"
+    },
+    {
+      "name": "Logispark Technologies",
+      "aliases": [
+        "Logispark Technologies Pvt. Ltd.",
+        "LogiSpark Technologies"
+      ],
+      "domain": "logisparktech.com",
+      "website": "https://logisparktech.com/",
+      "priority": "MEDIUM",
+      "importable": true,
+      "industry": "Software Development / IT Services",
+      "country": "Nepal",
+      "product": "Unnamed client-facing and internal projects",
+      "identity": "Engineer employer association from Himalayas; official company site confirms software services and Nepal/Kathmandu office.",
+      "sources": [
+        "https://himalayas.app/@yunishtuladhar",
+        "https://logisparktech.com/",
+        "https://np.linkedin.com/company/logispark-technologies"
+      ],
+      "sourceType": "Engineer-reported implementation",
+      "excerpt": "Implemented authentication and authorization using JWT, session management, and CASL-based RBAC.",
+      "attribution": "Yunish Tuladhar, Himalayas Logispark Technologies work experience",
+      "evidenceDate": "April 2024–Present",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "Client-facing/internal REST services",
+        "frontend": "Vue.js and React.js for role; exact CASL project mapping Unknown",
+        "backend": "Node.js, NestJS, Express listed for role",
+        "database": "PostgreSQL, TypeORM, MongoDB listed for role",
+        "authorizationModel": "CASL RBAC",
+        "multiTenancy": "Unknown",
+        "notableTechnicalDetails": "Specific client/product using CASL not disclosed."
+      },
+      "businessContext": {
+        "description": "Custom software and IT services provider.",
+        "commercialModel": "Software services and consulting.",
+        "adoptionSignals": "Evidence of commercial engineering work; do not attribute CASL to all clients or named Logispark products.",
+        "companyScale": "LinkedIn company advertises 11–50 employees; unaudited"
+      },
+      "contacts": [
+        {
+          "name": "Yunish Tuladhar",
+          "role": "Software Engineer (self-reported)",
+          "association": "Logispark Technologies Pvt. Ltd., April 2024–Present",
+          "url": "https://himalayas.app/@yunishtuladhar"
+        }
+      ],
+      "limitations": [
+        "Individual CASL client organizations unidentified.",
+        "Engineer skills/stack list applies across employment, not necessarily every CASL implementation.",
+        "Current production use not independently verified."
+      ],
+      "sourceId": "logispark-technologies",
+      "domainAliases": [],
+      "suppliedResearch": "### Logispark Technologies\n\n**Priority:** MEDIUM  \n**Industry:** Software Development / IT Services  \n**Country:** Nepal\n\n**Evidence:**\nhttps://himalayas.app/@yunishtuladhar\n\n**Technical contact:** Yunish Tuladhar\n\n**CASL usage:**\n\n- Engineer reports RBAC using CASL in client or internal projects.\n- Evidence suggests experience implementing CASL in commercial software.\n- Individual client organizations are not identified.\n\n**Potential consulting opportunities:**\n\n- Technical partnership.\n- Enterprise implementation support.\n- Authorization architecture reviews.\n- CASL expertise for future customer projects.\n\n**Evidence classification:** Engineer-reported implementation.\n\nDo not assume every Logispark client uses CASL.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Technical partnership.\n- Enterprise implementation support.\n- Authorization architecture reviews.\n- CASL expertise for future customer projects."
+      },
+      "assessment": {
+        "priority": "MEDIUM",
+        "evidenceStrength": "Engineer-reported implementation",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Confirm current deployment and permission pain points with public technical contact or owner.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://himalayas.app/@yunishtuladhar",
+          "https://logisparktech.com/",
+          "https://np.linkedin.com/company/logispark-technologies"
+        ],
+        "sourceType": "Engineer-reported implementation",
+        "evidenceDate": "April 2024–Present",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Strong explicit public CASL evidence; current production status Unknown",
+        "exactExcerpt": "Implemented authentication and authorization using JWT, session management, and CASL-based RBAC.",
+        "attribution": "Yunish Tuladhar, Himalayas Logispark Technologies work experience",
+        "limitations": [
+          "Individual CASL client organizations unidentified.",
+          "Engineer skills/stack list applies across employment, not necessarily every CASL implementation.",
+          "Current production use not independently verified."
+        ]
+      },
+      "notePath": "notes/logispark-technologies.md"
+    },
+    {
+      "name": "Tashkela",
+      "aliases": [],
+      "domain": "tashkelaapp.com",
+      "website": "https://tashkelaapp.com/",
+      "priority": "LOW",
+      "importable": false,
+      "skipReason": "Needs company identification",
+      "industry": "Sports Booking / Consumer Platform",
+      "country": "Unknown",
+      "product": "Tashkela sports facility booking app",
+      "identity": "Product and public stores verified. Apple seller Monzer KOUKOU; Google developer Monzer Koukou with Türkiye address. This identifies an individual publisher, not a legal company/organization.",
+      "sources": [
+        "https://github.com/AlaaALMidani",
+        "https://tashkelaapp.com/",
+        "https://apps.apple.com/us/app/tashkela/id6760282268",
+        "https://play.google.com/store/apps/details?id=com.tashkela.tashkela_app"
+      ],
+      "sourceType": "Developer-reported product implementation",
+      "excerpt": "Automated cron jobs and S3 backups, RBAC with CASL, and real-time flows with Socket.IO + Firebase.",
+      "attribution": "Alaa Al-Midani, GitHub profile Tashkela project",
+      "evidenceDate": "Unknown",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "Backend REST API and realtime",
+        "frontend": "Unknown",
+        "backend": "Node.js, Express",
+        "database": "MongoDB, Redis",
+        "authorizationModel": "CASL RBAC",
+        "multiTenancy": "Unknown",
+        "notableTechnicalDetails": "AWS, Docker and realtime tooling listed for project."
+      },
+      "businessContext": {
+        "description": "Sports facility booking and management application.",
+        "commercialModel": "Unknown",
+        "adoptionSignals": "Live official site and Apple/Google listings; paying users and revenue Unknown.",
+        "companyScale": "Unknown"
+      },
+      "contacts": [
+        {
+          "name": "Alaa Al-Midani",
+          "role": "Backend developer for project (self-reported)",
+          "association": "GitHub highlighted project; current OverZaki association does not prove ownership by OverZaki",
+          "url": "https://github.com/AlaaALMidani"
+        }
+      ],
+      "limitations": [
+        "Do not create company named after individual seller or infer employer ownership.",
+        "Seller address does not establish product/organization country.",
+        "Current production CASL use not independently inspected."
+      ],
+      "sourceId": "tashkela",
+      "domainAliases": [],
+      "suppliedResearch": "### Tashkela\n\n**Priority:** LOW  \n**Industry:** Sports Booking / Consumer Platform\n\n**Evidence:**\nhttps://github.com/AlaaALMidani\n\n**Technical contact:** Alaa Al-Midani\n\n**CASL usage:**\n\n- Developer reports using CASL RBAC for a sports facility booking platform.\n- Application has reportedly been published in the App Store.\n\n**Potential consulting opportunities:**\n\n- Role-based facility management.\n- Multi-organization authorization.\n- Booking administration.\n\n**Evidence classification:** Developer-reported product implementation.\n\n**Identity verification required:** Determine the legal company or organization operating Tashkela.\n\nIf Tashkela is only a product with no identifiable organization, do not invent a legal company. See section 5.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Role-based facility management.\n- Multi-organization authorization.\n- Booking administration."
+      },
+      "assessment": {
+        "priority": "LOW",
+        "evidenceStrength": "Developer-reported product implementation",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Identify responsible operating organization before CRM creation.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://github.com/AlaaALMidani",
+          "https://tashkelaapp.com/",
+          "https://apps.apple.com/us/app/tashkela/id6760282268",
+          "https://play.google.com/store/apps/details?id=com.tashkela.tashkela_app"
+        ],
+        "sourceType": "Developer-reported product implementation",
+        "evidenceDate": "Unknown",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Strong explicit public CASL evidence; current production status Unknown",
+        "exactExcerpt": "Automated cron jobs and S3 backups, RBAC with CASL, and real-time flows with Socket.IO + Firebase.",
+        "attribution": "Alaa Al-Midani, GitHub profile Tashkela project",
+        "limitations": [
+          "Do not create company named after individual seller or infer employer ownership.",
+          "Seller address does not establish product/organization country.",
+          "Current production CASL use not independently inspected."
+        ]
+      },
+      "notePath": "notes/tashkela.md"
+    },
+    {
+      "name": "Coreola",
+      "aliases": [],
+      "domain": "coreola.com",
+      "website": "https://coreola.com/",
+      "priority": "MEDIUM",
+      "importable": false,
+      "skipReason": "Needs company identification",
+      "industry": "Developer Tools / Commercial Software",
+      "country": "Unknown",
+      "product": "Commercial React admin foundation",
+      "identity": "Commercial product verified; site says Coreola team but does not identify legal company/operator. Terms and privacy pages inaccessible; merchant-of-record Creem is not product owner.",
+      "sources": [
+        "https://coreola.com/",
+        "https://docs.coreola.com/customization/permissions",
+        "https://docs.coreola.com/overview/what-is-coreola"
+      ],
+      "sourceType": "Product documentation / commercial offering",
+      "excerpt": "Both are implemented with CASL for the ability layer and a simple map for feature flags.",
+      "attribution": "Coreola Permissions documentation",
+      "evidenceDate": "Unknown",
+      "technicalImplementation": {
+        "caslPackages": "@casl/ability 6.x per docs",
+        "applicationArchitecture": "Frontend admin foundation with replaceable backend and development mock",
+        "frontend": "React 19, TypeScript, Vite, Redux Toolkit/RTK Query, MUI 9",
+        "backend": "Production backend supplied by adopter; json-server mock only",
+        "database": "Unknown",
+        "authorizationModel": "Ability matrix for navigation/routes/components/mutations",
+        "multiTenancy": "Unknown",
+        "notableTechnicalDetails": "Documentation shows CASL ability construction from user matrix; ABAC extensions described, not proof of shipped conditional rules."
+      },
+      "businessContext": {
+        "description": "Commercial developer foundation, not established as SaaS service.",
+        "commercialModel": "Homepage advertises $199 Personal / $599 Team founder offers; one-time licensing, 12 months updates.",
+        "adoptionSignals": "Commercial offer exists; paying customer count Unknown.",
+        "companyScale": "Unknown"
+      },
+      "contacts": [],
+      "limitations": [
+        "Legal company/operator unresolved; retain product in export.",
+        "Terms/privacy and Creem purchase URL returned cache miss.",
+        "Docs prove advertised implementation, not adoption by customer companies."
+      ],
+      "sourceId": "coreola",
+      "domainAliases": [],
+      "suppliedResearch": "### Coreola\n\n**Priority:** MEDIUM  \n**Industry:** Developer Tools / Commercial Software\n\n**Website:**\nhttps://coreola.com/\n\n**Evidence:**\nhttps://coreola.com/\n\n**CASL usage:**\n\n- Commercial React administration foundation/template.\n- CASL abilities reportedly govern navigation, routes, and components.\n- Product has been advertised with approximately $199 pricing; verify current details.\n\n**Potential consulting opportunities:**\n\n- Partnership or integration.\n- Recommended CASL architecture.\n- CASL documentation or example integrations.\n- Technical collaboration.\n\n**Evidence classification:** Product documentation / commercial offering.\n\nThis is a commercial developer tool, not necessarily a SaaS.\n\nDetermine its actual company/operator before creating a Company record.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Partnership or integration.\n- Recommended CASL architecture.\n- CASL documentation or example integrations.\n- Technical collaboration."
+      },
+      "assessment": {
+        "priority": "MEDIUM",
+        "evidenceStrength": "Product documentation / commercial offering",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Identify responsible operating organization before CRM creation.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://coreola.com/",
+          "https://docs.coreola.com/customization/permissions",
+          "https://docs.coreola.com/overview/what-is-coreola"
+        ],
+        "sourceType": "Product documentation / commercial offering",
+        "evidenceDate": "Unknown",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Strong explicit public CASL evidence; current production status Unknown",
+        "exactExcerpt": "Both are implemented with CASL for the ability layer and a simple map for feature flags.",
+        "attribution": "Coreola Permissions documentation",
+        "limitations": [
+          "Legal company/operator unresolved; retain product in export.",
+          "Terms/privacy and Creem purchase URL returned cache miss.",
+          "Docs prove advertised implementation, not adoption by customer companies."
+        ]
+      },
+      "notePath": "notes/coreola.md"
+    },
+    {
+      "name": "SmartBroker",
+      "aliases": [],
+      "domain": null,
+      "website": null,
+      "priority": "RESEARCH",
+      "importable": false,
+      "skipReason": "Needs company identification",
+      "industry": "Agricultural Trading / B2B SaaS",
+      "country": "Unknown",
+      "product": "SmartBroker grain brokerage contract management project",
+      "identity": "Developer home page lists SmartBroker project. No product owner, canonical commercial domain, legal company or production status established; avoid unrelated similarly named brokers.",
+      "sources": [
+        "https://md-webdeveloper.vercel.app/",
+        "https://md-webdeveloper.vercel.app/projects/smartbroker",
+        "https://br.linkedin.com/in/marcio-david-a8152733"
+      ],
+      "sourceType": "Developer-reported project; indexed professional profile corroboration",
+      "excerpt": "Controle de acesso baseado em funções (RBAC) com CASL",
+      "attribution": "Marcio David, search-indexed LinkedIn SmartBroker project announcement",
+      "evidenceDate": "Unknown; relative dates in search index not normalized",
+      "technicalImplementation": {
+        "caslPackages": "CASL; exact packages Unknown",
+        "applicationArchitecture": "Developer describes multi-tenant grain-contract SaaS in indexed LinkedIn announcement",
+        "frontend": "Next.js 15, TypeScript, React, Tailwind",
+        "backend": "Node.js; exact backend deployment Unknown",
+        "database": "PostgreSQL, Prisma",
+        "authorizationModel": "CASL RBAC in indexed developer report",
+        "multiTenancy": "Developer-reported multi-tenant design",
+        "notableTechnicalDetails": "PDF contracts and reports mentioned in developer announcement; commercial deployment unconfirmed."
+      },
+      "businessContext": {
+        "description": "Agricultural brokerage contract and commission management project.",
+        "commercialModel": "Unknown; developer calls it SaaS but paying customers not established.",
+        "adoptionSignals": "Portfolio and developer announcement only; actual private-client vs commercial company vs portfolio project unresolved.",
+        "companyScale": "Unknown"
+      },
+      "contacts": [
+        {
+          "name": "Marcio David",
+          "role": "Developer (portfolio/project announcement)",
+          "association": "SmartBroker project author; employment elsewhere does not establish product ownership",
+          "url": "https://md-webdeveloper.vercel.app/"
+        }
+      ],
+      "limitations": [
+        "Provided project detail URL inaccessible (cache miss), including retry from portfolio link.",
+        "LinkedIn corroboration is indexed text; direct profile not used to establish ownership.",
+        "No canonical company domain verified; leave blank."
+      ],
+      "sourceId": "smartbroker",
+      "domainAliases": [],
+      "suppliedResearch": "### SmartBroker\n\n**Priority:** RESEARCH  \n**Industry:** Agricultural Trading / B2B SaaS\n\n**Evidence:**\nhttps://md-webdeveloper.vercel.app/projects/smartbroker\n\n**Technical contact:** Marcio David\n\n**CASL usage:**\n\n- Developer describes a multi-tenant SaaS application for grain brokers.\n- CASL-based RBAC.\n- Commercial workflow involving agricultural brokerage.\n\n**Potential consulting opportunities:**\n\n- Multi-tenant permissions.\n- Fine-grained access to trading data.\n- Conditional authorization.\n- Authorization architecture review.\n\n**Evidence classification:** Developer-reported project.\n\n**Identity verification required:** Determine whether SmartBroker is an actual commercial company, private client product, or portfolio project.\n\nDo not manufacture company ownership or production status.",
+      "opportunities": {
+        "status": "Hypotheses, not confirmed customer needs",
+        "suppliedHypotheses": "- Multi-tenant permissions.\n- Fine-grained access to trading data.\n- Conditional authorization.\n- Authorization architecture review."
+      },
+      "assessment": {
+        "priority": "RESEARCH",
+        "evidenceStrength": "Developer-reported project; indexed professional profile corroboration",
+        "currentUsageVerified": "Unknown",
+        "suggestedNextResearchStep": "Identify responsible operating organization before CRM creation.",
+        "outreachAngle": "Discuss documented authorization architecture; validate interest before proposing engagement. No outreach performed.",
+        "researchDate": "2026-11-15"
+      },
+      "evidence": {
+        "sourceUrls": [
+          "https://md-webdeveloper.vercel.app/",
+          "https://md-webdeveloper.vercel.app/projects/smartbroker",
+          "https://br.linkedin.com/in/marcio-david-a8152733"
+        ],
+        "sourceType": "Developer-reported project; indexed professional profile corroboration",
+        "evidenceDate": "Unknown; relative dates in search index not normalized",
+        "lastVerified": "2026-11-15",
+        "adoptionStatus": "Publicly reported implementation; live production not independently verified",
+        "confidence": "Medium: explicit CASL in indexed first-party profile; direct retrieval limited",
+        "exactExcerpt": "Controle de acesso baseado em funções (RBAC) com CASL",
+        "attribution": "Marcio David, search-indexed LinkedIn SmartBroker project announcement",
+        "limitations": [
+          "Provided project detail URL inaccessible (cache miss), including retry from portfolio link.",
+          "LinkedIn corroboration is indexed text; direct profile not used to establish ownership.",
+          "No canonical company domain verified; leave blank."
+        ]
+      },
+      "notePath": "notes/smartbroker.md"
+    }
+  ]
+}

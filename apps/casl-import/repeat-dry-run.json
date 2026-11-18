@@ -1,0 +1,186 @@
+[
+  {
+    "name": "Frequency",
+    "id": "b7b13ce9-2a60-594b-9dfe-e33781f7cd9a",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": [
+      {
+        "name": "Flint Barrow",
+        "action": "reuse"
+      }
+    ]
+  },
+  {
+    "name": "AutogenAI",
+    "id": "3a74378f-72df-5857-ab07-ba566e379c8b",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": [
+      {
+        "name": "Lee Lappage",
+        "action": "reuse"
+      }
+    ]
+  },
+  {
+    "name": "Merit Incentives",
+    "id": "77135556-4199-5a16-8b23-2dce9a9dac2a",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": [
+      {
+        "name": "Hassan Ahmad",
+        "action": "reuse"
+      }
+    ]
+  },
+  {
+    "name": "Omniful",
+    "id": "b091c526-8698-56c2-abbd-439021db973f",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": [
+      {
+        "name": "Parul Jamwal",
+        "action": "reuse"
+      }
+    ]
+  },
+  {
+    "name": "Money Forward i",
+    "id": "c1eb6ece-5c9c-5cc7-b089-a51d851e45f0",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "InCred Money",
+    "id": "0ce91ac7-fa18-533a-a70e-d919a0c9f617",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "PeopleX",
+    "id": "ca333883-1076-59a9-a68a-b86b8d0538db",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "Naya People",
+    "id": "c8b4cf68-eb3d-5956-9df8-1964f2965f1a",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "Xpand",
+    "id": "7d62bea8-4e72-5d47-9c64-9b1ca716b6e3",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "Quick Up",
+    "id": "fe248601-b1c2-5b4a-8299-01b50fcf4705",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": [
+      {
+        "name": "Muhammad Umair",
+        "action": "reuse"
+      }
+    ]
+  },
+  {
+    "name": "EZclass",
+    "id": "c9b3f239-f4c0-5c5c-84dc-0ff7da7e6b7b",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": [
+      {
+        "name": "Reven Ferlian Erlangga",
+        "action": "reuse"
+      }
+    ]
+  },
+  {
+    "name": "RanGO",
+    "id": "3c2fcc8f-f9e9-5601-b638-b2112e586eaf",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": [
+      {
+        "name": "Luiz Filipe Bandeira",
+        "action": "reuse"
+      }
+    ]
+  },
+  {
+    "name": "MedWorkForce.ai",
+    "action": "skip",
+    "reason": "Legal company/owner unverified: developer worked for Buzfi Limited but product ownership is not established. Do not create a product-only Company or assume Buzfi is owner."
+  },
+  {
+    "name": "Dobby Ads",
+    "id": "d839721f-aeb6-5520-b03a-7ab0ded1a531",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "Maventi Group",
+    "id": "efe10ea7-1480-5c5f-a13e-bb23ef7c2783",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "Strapi",
+    "id": "d8410cc1-fbb3-5556-9563-d2df757f1c25",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "Meshery",
+    "id": "e2dd89d5-4b18-5efc-87bd-70cea706202b",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "Infisical",
+    "id": "df4fe94a-70a5-519e-973e-0b229c7e2c68",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  },
+  {
+    "name": "Lightdash",
+    "id": "349abcca-ad12-5bcb-b7ae-cad1ed9c9425",
+    "action": "reuse",
+    "leadTypePatch": null,
+    "noteAction": "preserve",
+    "contacts": []
+  }
+]

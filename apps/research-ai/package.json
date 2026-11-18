@@ -1,0 +1,29 @@
+{
+  "name": "@local/research-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "configure": "node src/configure.ts",
+    "start": "node --env-file=.env src/bridge.ts",
+    "analyze": "node --env-file=.env src/analyze.ts",
+    "smoke": "node --env-file=.env src/smoke.ts",
+    "install-service": "node src/install-service.ts",
+    "test": "vitest run src",
+    "typecheck": "tsc --noEmit",
+    "lint": "prettier --check src *.json README.md"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "24.7.2",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

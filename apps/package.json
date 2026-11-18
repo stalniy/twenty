@@ -1,0 +1,14 @@
+{
+  "name": "twenty-local-apps",
+  "private": true,
+  "packageManager": "yarn@4.18.1",
+  "workspaces": [
+    "job-collector",
+    "research-ai"
+  ],
+  "scripts": {
+    "build": "yarn workspace @local/job-collector build",
+    "test": "yarn workspace @local/job-collector test",
+    "typecheck": "yarn workspace @local/job-collector typecheck"
+  }
+}

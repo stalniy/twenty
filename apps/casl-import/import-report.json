@@ -1,0 +1,354 @@
+{
+  "date": "2026-11-13",
+  "status": "Completed",
+  "companiesCreated": 18,
+  "existingCompaniesUpdated": 0,
+  "peopleCreated": 7,
+  "peopleLinked": 0,
+  "researchNotesCreated": 18,
+  "skipped": [
+    {
+      "name": "MedWorkForce.ai",
+      "reason": "Legal company/owner unverified: developer worked for Buzfi Limited but product ownership is not established. Do not create a product-only Company or assume Buzfi is owner."
+    }
+  ],
+  "leadType": "CASL_USER",
+  "leadTypeFieldType": "SELECT",
+  "apiLimitations": [
+    "Existing leadType remains single-select; in-place type conversion is unsupported."
+  ],
+  "evidenceStatuses": {
+    "Engineer-reported": 8,
+    "Historical": 2,
+    "Documentation-reported": 7,
+    "Planned": 1
+  },
+  "preexistingRecordsUnchanged": true,
+  "repeatDryRunRequiresNoWrites": true,
+  "errors": [],
+  "companies": [
+    {
+      "name": "Frequency",
+      "id": "b7b13ce9-2a60-594b-9dfe-e33781f7cd9a",
+      "action": "created",
+      "noteId": "0b93314c-1072-537c-a00d-c74403689a6c",
+      "people": [
+        {
+          "name": "Flint Barrow",
+          "id": "98e445f9-ae61-5de6-a183-868a7806e00c",
+          "action": "created",
+          "url": "http://localhost:3000/object/person/98e445f9-ae61-5de6-a183-868a7806e00c"
+        }
+      ],
+      "url": "http://localhost:3000/object/company/b7b13ce9-2a60-594b-9dfe-e33781f7cd9a"
+    },
+    {
+      "name": "AutogenAI",
+      "id": "3a74378f-72df-5857-ab07-ba566e379c8b",
+      "action": "created",
+      "noteId": "ad66b8c3-25a7-5b40-bc35-fa69e55a07fb",
+      "people": [
+        {
+          "name": "Lee Lappage",
+          "id": "2dc72c41-e8cf-5598-98a3-a18c7f0903c9",
+          "action": "created",
+          "url": "http://localhost:3000/object/person/2dc72c41-e8cf-5598-98a3-a18c7f0903c9"
+        }
+      ],
+      "url": "http://localhost:3000/object/company/3a74378f-72df-5857-ab07-ba566e379c8b"
+    },
+    {
+      "name": "Merit Incentives",
+      "id": "77135556-4199-5a16-8b23-2dce9a9dac2a",
+      "action": "created",
+      "noteId": "f076472d-c7b9-5491-9828-5d82575270c8",
+      "people": [
+        {
+          "name": "Hassan Ahmad",
+          "id": "140d559c-4828-557e-8182-04c43021a326",
+          "action": "created",
+          "url": "http://localhost:3000/object/person/140d559c-4828-557e-8182-04c43021a326"
+        }
+      ],
+      "url": "http://localhost:3000/object/company/77135556-4199-5a16-8b23-2dce9a9dac2a"
+    },
+    {
+      "name": "Omniful",
+      "id": "b091c526-8698-56c2-abbd-439021db973f",
+      "action": "created",
+      "noteId": "e1d88e75-6f47-52b5-bb13-42d273cd04e0",
+      "people": [
+        {
+          "name": "Parul Jamwal",
+          "id": "31c74604-8728-58a2-9b7d-1e5c9390068a",
+          "action": "created",
+          "url": "http://localhost:3000/object/person/31c74604-8728-58a2-9b7d-1e5c9390068a"
+        }
+      ],
+      "url": "http://localhost:3000/object/company/b091c526-8698-56c2-abbd-439021db973f"
+    },
+    {
+      "name": "Money Forward i",
+      "id": "c1eb6ece-5c9c-5cc7-b089-a51d851e45f0",
+      "action": "created",
+      "noteId": "b0d45a6a-9df8-5d49-9cf9-73a37a96a3d8",
+      "people": [],
+      "url": "http://localhost:3000/object/company/c1eb6ece-5c9c-5cc7-b089-a51d851e45f0"
+    },
+    {
+      "name": "InCred Money",
+      "id": "0ce91ac7-fa18-533a-a70e-d919a0c9f617",
+      "action": "created",
+      "noteId": "64ca4e44-1198-51ed-b36b-d4814ff561d5",
+      "people": [],
+      "url": "http://localhost:3000/object/company/0ce91ac7-fa18-533a-a70e-d919a0c9f617"
+    },
+    {
+      "name": "PeopleX",
+      "id": "ca333883-1076-59a9-a68a-b86b8d0538db",
+      "action": "created",
+      "noteId": "f418505a-9f60-5dc2-9e97-b8c3ee15e20b",
+      "people": [],
+      "url": "http://localhost:3000/object/company/ca333883-1076-59a9-a68a-b86b8d0538db"
+    },
+    {
+      "name": "Naya People",
+      "id": "c8b4cf68-eb3d-5956-9df8-1964f2965f1a",
+      "action": "created",
+      "noteId": "22914cf3-7017-524a-bbc2-5b631a056160",
+      "people": [],
+      "url": "http://localhost:3000/object/company/c8b4cf68-eb3d-5956-9df8-1964f2965f1a"
+    },
+    {
+      "name": "Xpand",
+      "id": "7d62bea8-4e72-5d47-9c64-9b1ca716b6e3",
+      "action": "created",
+      "noteId": "f55b50a8-bd3e-5475-ba21-d1098ef36a63",
+      "people": [],
+      "url": "http://localhost:3000/object/company/7d62bea8-4e72-5d47-9c64-9b1ca716b6e3"
+    },
+    {
+      "name": "Quick Up",
+      "id": "fe248601-b1c2-5b4a-8299-01b50fcf4705",
+      "action": "created",
+      "noteId": "f8afb8c5-4a8c-56a8-8122-207b81063ffe",
+      "people": [
+        {
+          "name": "Muhammad Umair",
+          "id": "b71163bd-fc17-5329-a122-71596e5586ee",
+          "action": "created",
+          "url": "http://localhost:3000/object/person/b71163bd-fc17-5329-a122-71596e5586ee"
+        }
+      ],
+      "url": "http://localhost:3000/object/company/fe248601-b1c2-5b4a-8299-01b50fcf4705"
+    },
+    {
+      "name": "EZclass",
+      "id": "c9b3f239-f4c0-5c5c-84dc-0ff7da7e6b7b",
+      "action": "created",
+      "noteId": "12dc5501-ac3b-534c-bdf6-8c63f06efed3",
+      "people": [
+        {
+          "name": "Reven Ferlian Erlangga",
+          "id": "3e6b058e-f8d6-5e54-99b1-4a4fe6f9f698",
+          "action": "created",
+          "url": "http://localhost:3000/object/person/3e6b058e-f8d6-5e54-99b1-4a4fe6f9f698"
+        }
+      ],
+      "url": "http://localhost:3000/object/company/c9b3f239-f4c0-5c5c-84dc-0ff7da7e6b7b"
+    },
+    {
+      "name": "RanGO",
+      "id": "3c2fcc8f-f9e9-5601-b638-b2112e586eaf",
+      "action": "created",
+      "noteId": "e72f115c-83cc-5969-bcb7-692d55803f01",
+      "people": [
+        {
+          "name": "Luiz Filipe Bandeira",
+          "id": "f909f868-7936-5cfd-8890-b7b9c5f1cc59",
+          "action": "created",
+          "url": "http://localhost:3000/object/person/f909f868-7936-5cfd-8890-b7b9c5f1cc59"
+        }
+      ],
+      "url": "http://localhost:3000/object/company/3c2fcc8f-f9e9-5601-b638-b2112e586eaf"
+    },
+    {
+      "name": "Dobby Ads",
+      "id": "d839721f-aeb6-5520-b03a-7ab0ded1a531",
+      "action": "created",
+      "noteId": "b65dd952-6847-52ea-889a-f21dff12ee4e",
+      "people": [],
+      "url": "http://localhost:3000/object/company/d839721f-aeb6-5520-b03a-7ab0ded1a531"
+    },
+    {
+      "name": "Maventi Group",
+      "id": "efe10ea7-1480-5c5f-a13e-bb23ef7c2783",
+      "action": "created",
+      "noteId": "9be57c7e-617b-56b4-ae0f-3e6946db233c",
+      "people": [],
+      "url": "http://localhost:3000/object/company/efe10ea7-1480-5c5f-a13e-bb23ef7c2783"
+    },
+    {
+      "name": "Strapi",
+      "id": "d8410cc1-fbb3-5556-9563-d2df757f1c25",
+      "action": "created",
+      "noteId": "c35333d8-7dc6-5b92-93e2-88cf2a462368",
+      "people": [],
+      "url": "http://localhost:3000/object/company/d8410cc1-fbb3-5556-9563-d2df757f1c25"
+    },
+    {
+      "name": "Meshery",
+      "id": "e2dd89d5-4b18-5efc-87bd-70cea706202b",
+      "action": "created",
+      "noteId": "4efe9bee-846a-5354-9b9c-e619652fdb59",
+      "people": [],
+      "url": "http://localhost:3000/object/company/e2dd89d5-4b18-5efc-87bd-70cea706202b"
+    },
+    {
+      "name": "Infisical",
+      "id": "df4fe94a-70a5-519e-973e-0b229c7e2c68",
+      "action": "created",
+      "noteId": "d934d5d2-7297-5c3f-b3dd-86f1b2da15ff",
+      "people": [],
+      "url": "http://localhost:3000/object/company/df4fe94a-70a5-519e-973e-0b229c7e2c68"
+    },
+    {
+      "name": "Lightdash",
+      "id": "349abcca-ad12-5bcb-b7ae-cad1ed9c9425",
+      "action": "created",
+      "noteId": "15412b64-d7d4-531e-8aca-3e0bb7bf5f8c",
+      "people": [],
+      "url": "http://localhost:3000/object/company/349abcca-ad12-5bcb-b7ae-cad1ed9c9425"
+    }
+  ],
+  "missingInformation": [
+    {
+      "name": "Frequency",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "AutogenAI",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "Merit Incentives",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "Omniful",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "Money Forward i",
+      "details": [
+        "Current CASL adoption requires verification; evidence dates to 2023."
+      ]
+    },
+    {
+      "name": "InCred Money",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "PeopleX",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "Naya People",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "Xpand",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "Quick Up",
+      "details": [
+        "Current adoption not independently confirmed with the organization."
+      ]
+    },
+    {
+      "name": "EZclass",
+      "details": [
+        "Current adoption unknown; source describes former employment Jan\u2013Apr 2025."
+      ]
+    },
+    {
+      "name": "RanGO",
+      "details": [
+        "Exact evidence publication date unavailable (relative timestamps only).",
+        "Current CASL use not independently confirmed with company."
+      ]
+    },
+    {
+      "name": "MedWorkForce.ai",
+      "details": [
+        "Legal owner/operator of MedWorkForce.ai unverified.",
+        "Canonical company domain unverified.",
+        "Production adoption unverified."
+      ]
+    },
+    {
+      "name": "Dobby Ads",
+      "details": [
+        "Internal private platform cannot be inspected.",
+        "No commercial interest verified."
+      ]
+    },
+    {
+      "name": "Maventi Group",
+      "details": [
+        "Exact listing date unknown; page provides relative timestamp.",
+        "Production usage not confirmed."
+      ]
+    },
+    {
+      "name": "Strapi",
+      "details": [
+        "Exact source publication date unknown; mutable repository branch observed on verification date.",
+        "Commercial priority not assigned.",
+        "Production deployment not independently inspected."
+      ]
+    },
+    {
+      "name": "Meshery",
+      "details": [
+        "Documentation publication date unknown.",
+        "Commercial organization/legal owner not inferred from project branding.",
+        "Production deployment not independently inspected.",
+        "Commercial priority not assigned."
+      ]
+    },
+    {
+      "name": "Infisical",
+      "details": [
+        "Exact source publication date unknown; mutable repository branch observed on verification date.",
+        "Commercial priority not assigned.",
+        "Production deployment not independently inspected."
+      ]
+    },
+    {
+      "name": "Lightdash",
+      "details": [
+        "Exact source publication date unknown; mutable repository branch observed on verification date.",
+        "Commercial priority not assigned.",
+        "Production deployment not independently inspected."
+      ]
+    }
+  ]
+}

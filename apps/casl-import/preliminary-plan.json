@@ -1,0 +1,184 @@
+{
+  "status": "Not a live CRM dry run; authentication pending",
+  "companies": [
+    {
+      "company": "Frequency",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://frequency.media/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [
+        "Flint Barrow"
+      ],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "AutogenAI",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://autogenai.com/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [
+        "Lee Lappage"
+      ],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "Merit Incentives",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://www.meritincentives.com/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [
+        "Hassan Ahmad"
+      ],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "Omniful",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://www.omniful.ai/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [
+        "Parul Jamwal"
+      ],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "Money Forward i",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://admina.moneyforward.com/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Historical",
+      "contacts": [],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "InCred Money",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://www.incredmoney.com/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Documentation-reported",
+      "contacts": [],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "PeopleX",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://peoplex.jp/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Documentation-reported",
+      "contacts": [],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "Naya People",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://nayapeople.com/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Documentation-reported",
+      "contacts": [],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "Xpand",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://xpand.us/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "Quick Up",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://quickup.uk/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [
+        "Muhammad Umair"
+      ],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "EZclass",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://ezclass.io/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Historical",
+      "contacts": [
+        "Reven Ferlian Erlangga"
+      ],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "RanGO",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://www.rango.food/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [
+        "Luiz Filipe Bandeira"
+      ],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "MedWorkForce.ai",
+      "proposedAction": "skip",
+      "skipReason": "Legal company/owner unverified: developer worked for Buzfi Limited but product ownership is not established. Do not create a product-only Company or assume Buzfi is owner.",
+      "website": null,
+      "leadTypeToAdd": null,
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "Dobby Ads",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://dobbyads.com/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Engineer-reported",
+      "contacts": [],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    },
+    {
+      "company": "Maventi Group",
+      "proposedAction": "match existing company or create",
+      "skipReason": null,
+      "website": "https://www.maventigroup.com/",
+      "leadTypeToAdd": "CASL_USER",
+      "adoptionStatus": "Planned",
+      "contacts": [],
+      "crmMatching": "pending authentication",
+      "noteAction": "preserve existing research note; create only if absent"
+    }
+  ]
+}

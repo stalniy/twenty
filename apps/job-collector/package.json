@@ -1,0 +1,37 @@
+{
+  "name": "@local/job-collector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Collect remote software engineering jobs into Twenty from multiple sources.",
+  "license": "AGPL-3.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24",
+    "twenty": ">=2.57.0"
+  },
+  "scripts": {
+    "build": "node scripts/app.mjs build",
+    "apply": "node scripts/app.mjs apply",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run src --exclude '**/.app/**'",
+    "lint": "prettier --check src scripts *.json *.ts README.md"
+  },
+  "dependencies": {
+    "@sniptt/guards": "0.2.0",
+    "cheerio": "1.1.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "24.7.2",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "prettier": "3.6.2",
+    "twenty": "2.57.0",
+    "twenty-client-sdk": "2.57.0",
+    "twenty-sdk": "2.57.0",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

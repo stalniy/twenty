@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-15",
+  "status": "Completed",
+  "companiesCreated": 7,
+  "existingCompaniesUpdated": 0,
+  "notesCreated": 7,
+  "notesUpdated": 0,
+  "candidatesAwaitingIdentification": 3,
+  "peopleCreated": 0,
+  "opportunitiesCreated": 0,
+  "tasksCreated": 0,
+  "leadTypeFieldType": "SELECT",
+  "leadTypeValue": "CASL_USER",
+  "verification": {
+    "leadTypeFieldType": "SELECT",
+    "option": "CASL_USER",
+    "idempotent": true,
+    "preexistingRecordsPreserved": {
+      "companies": true,
+      "notes": true,
+      "noteTargets": true,
+      "people": true,
+      "opportunities": true,
+      "tasks": true
+    },
+    "companiesVerified": 7
+  },
+  "companies": [
+    {
+      "name": "Fluents.ai",
+      "id": "6ccd32b2-fdec-59d6-b395-007102382a4f",
+      "action": "create",
+      "patch": {
+        "leadType": "CASL_USER"
+      },
+      "noteAction": "create",
+      "noteId": "7c6a7f58-4676-505d-a202-27f25844d6f7",
+      "targetAction": "create",
+      "target": {
+        "id": "593814f8-05fc-518f-b856-e44f07466ef8",
+        "noteId": "7c6a7f58-4676-505d-a202-27f25844d6f7",
+        "targetCompanyId": "6ccd32b2-fdec-59d6-b395-007102382a4f"
+      },
+      "title": "CASL Adoption Research — Fluents.ai",
+      "url": "http://localhost:3000/object/company/6ccd32b2-fdec-59d6-b395-007102382a4f"
+    },
+    {
+      "name": "Tija360",
+      "id": "1c9bc00e-e7cc-523a-99eb-33c39092a114",
+      "action": "create",
+      "patch": {
+        "leadType": "CASL_USER"
+      },
+      "noteAction": "create",
+      "noteId": "e0f5370d-8657-5434-95fc-9d6c823c0e90",
+      "targetAction": "create",
+      "target": {
+        "id": "8524383a-49a6-5b45-aa68-9a96a172134d",
+        "noteId": "e0f5370d-8657-5434-95fc-9d6c823c0e90",
+        "targetCompanyId": "1c9bc00e-e7cc-523a-99eb-33c39092a114"
+      },
+      "title": "CASL Adoption Research — Tija360",
+      "url": "http://localhost:3000/object/company/1c9bc00e-e7cc-523a-99eb-33c39092a114"
+    },
+    {
+      "name": "Sagacify",
+      "id": "36019184-5ecc-52cf-b971-2cb2363854ac",
+      "action": "create",
+      "patch": {
+        "leadType": "CASL_USER"
+      },
+      "noteAction": "create",
+      "noteId": "43f7703f-5eae-59fe-bbe3-371c6a4902a4",
+      "targetAction": "create",
+      "target": {
+        "id": "b7b7d5d9-d2e7-5e47-9185-2c54e7917517",
+        "noteId": "43f7703f-5eae-59fe-bbe3-371c6a4902a4",
+        "targetCompanyId": "36019184-5ecc-52cf-b971-2cb2363854ac"
+      },
+      "title": "CASL Adoption Research — Sagacify",
+      "url": "http://localhost:3000/object/company/36019184-5ecc-52cf-b971-2cb2363854ac"
+    },
+    {
+      "name": "Korial",
+      "id": "6ec4a716-0d7d-5546-a8eb-afda1d3a7478",
+      "action": "create",
+      "patch": {
+        "leadType": "CASL_USER"
+      },
+      "noteAction": "create",
+      "noteId": "fd0e5708-ce67-5e65-9d9b-5cc34eba3589",
+      "targetAction": "create",
+      "target": {
+        "id": "1bfe47e8-0be7-5b9a-aa49-82ebfe140628",
+        "noteId": "fd0e5708-ce67-5e65-9d9b-5cc34eba3589",
+        "targetCompanyId": "6ec4a716-0d7d-5546-a8eb-afda1d3a7478"
+      },
+      "title": "CASL Adoption Research — Korial",
+      "url": "http://localhost:3000/object/company/6ec4a716-0d7d-5546-a8eb-afda1d3a7478"
+    },
+    {
+      "name": "Voltrack Pro",
+      "id": "01900939-3840-5653-be21-23241ebc3b61",
+      "action": "create",
+      "patch": {
+        "leadType": "CASL_USER"
+      },
+      "noteAction": "create",
+      "noteId": "54204ca8-9ad5-527b-899d-291a4992ca2d",
+      "targetAction": "create",
+      "target": {
+        "id": "d258ce64-5e13-595f-bb45-607adf3b7cc2",
+        "noteId": "54204ca8-9ad5-527b-899d-291a4992ca2d",
+        "targetCompanyId": "01900939-3840-5653-be21-23241ebc3b61"
+      },
+      "title": "CASL Adoption Research — Voltrack Pro",
+      "url": "http://localhost:3000/object/company/01900939-3840-5653-be21-23241ebc3b61"
+    },
+    {
+      "name": "Jack's Burger",
+      "id": "ede9300f-788d-5b91-937b-8c8ca6b874e8",
+      "action": "create",
+      "patch": {
+        "leadType": "CASL_USER"
+      },
+      "noteAction": "create",
+      "noteId": "a91a065e-9ce7-5cbf-aaee-cef649b62729",
+      "targetAction": "create",
+      "target": {
+        "id": "0a899155-e63d-5022-a6f1-674739574541",
+        "noteId": "a91a065e-9ce7-5cbf-aaee-cef649b62729",
+        "targetCompanyId": "ede9300f-788d-5b91-937b-8c8ca6b874e8"
+      },
+      "title": "CASL Adoption Research — Jack's Burger",
+      "url": "http://localhost:3000/object/company/ede9300f-788d-5b91-937b-8c8ca6b874e8"
+    },
+    {
+      "name": "Logispark Technologies",
+      "id": "f38b5d2a-50bb-5db9-a076-a726ac20d9ed",
+      "action": "create",
+      "patch": {
+        "leadType": "CASL_USER"
+      },
+      "noteAction": "create",
+      "noteId": "5cb63a8e-4d57-50f4-beee-667f2aae2472",
+      "targetAction": "create",
+      "target": {
+        "id": "85983fa9-07d0-5b36-803e-5ff1401f77fc",
+        "noteId": "5cb63a8e-4d57-50f4-beee-667f2aae2472",
+        "targetCompanyId": "f38b5d2a-50bb-5db9-a076-a726ac20d9ed"
+      },
+      "title": "CASL Adoption Research — Logispark Technologies",
+      "url": "http://localhost:3000/object/company/f38b5d2a-50bb-5db9-a076-a726ac20d9ed"
+    }
+  ],
+  "held": [
+    {
+      "name": "Tashkela",
+      "action": "skip",
+      "reason": "Needs company identification"
+    },
+    {
+      "name": "Coreola",
+      "action": "skip",
+      "reason": "Needs company identification"
+    },
+    {
+      "name": "SmartBroker",
+      "action": "skip",
+      "reason": "Needs company identification"
+    }
+  ],
+  "limitations": [
+    "Existing Lead Type is SELECT, not MULTI_SELECT; existing classifications preserved, field schema unchanged.",
+    "All CASL evidence is public reporting or documentation; current production usage remains Unknown.",
+    "Tija360 LinkedIn direct access blocked (999), explicit CASL evidence available via indexed first-party profile.",
+    "SmartBroker detail page inaccessible; project existence and CASL corroborated by portfolio/indexed profile but owner and production status unknown.",
+    "Coreola terms/privacy/payment pages inaccessible; operator unresolved.",
+    "Tashkela policy inaccessible; store seller is an individual, no verified company."
+  ]
+}
